@@ -185,40 +185,40 @@ A tiny fluffy penguin with a round belly, in pajamas, alarm going off beside the
 
 ---
 
-### 예시 5 — 🩺 토끼 의사 — 스타일 B
+### 예시 5 — 🩺 토끼 의사 — 스타일 A
 
 ```
-A soft lavender bunny with floppy ears, wearing a tiny stethoscope and white coat, holding a clipboard with a tired smile, chibi kawaii character illustration, clean smooth outlines, soft flat color fills with gentle cel-shading highlights, big round expressive eyes, warm vibrant color palette, cozy comfort aesthetic, like a modern Korean character IP merchandise illustration, slightly more detailed than a sticker, lavender and warm ivory, cozy pastel palette, single character centered, full body shown, lots of white space around. Clean white background, print-ready, no text. --ar 1:1 --s 200 --niji 6
-```
-
-![image.png](image.png)
-
----
-
-### 예시 6 — 🎨 햄스터 디자이너 — 스타일 B
-
-```
-A plump golden hamster with chubby cheeks, drawing on a tablet with intense focus, multiple tiny reference images pinned around, tongue slightly out in concentration, chibi kawaii character illustration, clean smooth outlines, soft flat color fills with gentle cel-shading highlights, big round expressive eyes, warm vibrant color palette, cozy comfort aesthetic, like a modern Korean character IP merchandise illustration, slightly more detailed than a sticker, warm coral and cream, soft yellow highlights, character slightly off-center, props and objects naturally arranged around. Clean white background, print-ready, no text. --ar 1:1 --s 200 --niji 6
+A soft lavender bunny with floppy ears, wearing a tiny stethoscope and white coat, holding a clipboard with a tired smile, simple chibi kawaii sticker illustration, minimal clean linework, extremely soft rounded body shapes, flat color fills with very limited palette, small dot eyes, no complex details, white background, like a LINE Friends or KakaoTalk emoticon sticker, highly relatable and cute, two-color palette, light purple and white with black outline accents, single character centered, full body shown, lots of white space around. Clean white background, print-ready, no text. --ar 1:1 --s 150
 ```
 
 ![image.png](image.png)
 
 ---
 
-### 예시 7 — 💪 개구리 억지 헬스 — 스타일 B
+### 예시 6 — 🎨 햄스터 디자이너 — 스타일 A
 
 ```
-A small green frog with big round eyes, half-heartedly lifting a tiny dumbbell at the gym, exhausted expression, sweat drops flying, chibi kawaii character illustration, clean smooth outlines, soft flat color fills with gentle cel-shading highlights, big round expressive eyes, warm vibrant color palette, cozy comfort aesthetic, like a modern Korean character IP merchandise illustration, slightly more detailed than a sticker, mint green and soft white, gentle pastel tones, single character centered, full body shown, lots of white space around. Clean white background, print-ready, no text. --ar 1:1 --s 200 --niji 6
+A plump golden hamster with chubby cheeks, drawing on a tablet with intense focus, multiple tiny reference images pinned around, tongue slightly out in concentration, simple chibi kawaii sticker illustration, minimal clean linework, extremely soft rounded body shapes, flat color fills with very limited palette, small dot eyes, no complex details, white background, like a LINE Friends or KakaoTalk emoticon sticker, highly relatable and cute, warm cream and brown tones, simple cozy palette, character slightly off-center, props and objects naturally arranged around. Clean white background, print-ready, no text. --ar 1:1 --s 150
 ```
 
 ![image.png](image.png)
 
 ---
 
-### 예시 8 — ☕ 고양이 카공족 — 스타일 B
+### 예시 7 — 💪 개구리 억지 헬스 — 스타일 A
 
 ```
-A sleepy orange tabby cat with half-closed eyes, sitting cross-legged with a tiny laptop at a cozy cafe, matcha latte on the table, cozy focused expression, chibi kawaii character illustration, clean smooth outlines, soft flat color fills with gentle cel-shading highlights, big round expressive eyes, warm vibrant color palette, cozy comfort aesthetic, like a modern Korean character IP merchandise illustration, slightly more detailed than a sticker, soft sky blue and warm peach, friendly warm tones, character slightly off-center, props and objects naturally arranged around. Clean white background, print-ready, no text. --ar 1:1 --s 200 --niji 6
+A small green frog with big round eyes, half-heartedly lifting a tiny dumbbell at the gym, exhausted expression, sweat drops flying, simple chibi kawaii sticker illustration, minimal clean linework, extremely soft rounded body shapes, flat color fills with very limited palette, small dot eyes, no complex details, white background, like a LINE Friends or KakaoTalk emoticon sticker, highly relatable and cute, two-color palette, mint green and white with black outline accents, single character centered, full body shown, lots of white space around. Clean white background, print-ready, no text. --ar 1:1 --s 150
+```
+
+![image.png](image.png)
+
+---
+
+### 예시 8 — ☕ 고양이 카공족 — 스타일 A
+
+```
+A sleepy orange tabby cat with half-closed eyes, sitting cross-legged with a tiny laptop at a cozy cafe, matcha latte on the table, cozy focused expression, simple chibi kawaii sticker illustration, minimal clean linework, extremely soft rounded body shapes, flat color fills with very limited palette, small dot eyes, no complex details, white background, like a LINE Friends or KakaoTalk emoticon sticker, highly relatable and cute, soft pastel blue and white, minimal warm grey accents, character slightly off-center, props and objects naturally arranged around. Clean white background, print-ready, no text. --ar 1:1 --s 150
 ```
 
 ![image.png](image.png)
