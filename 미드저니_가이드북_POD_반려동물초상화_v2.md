@@ -112,7 +112,7 @@ a cinematic lifestyle photograph, shallow depth of field bokeh background, warm 
 **스타일 3 — 빈티지 장르** (고양이 UFO 계열)
 
 ```
-a vintage genre print illustration, aged sepia and warm brown tones, retro ink print quality, like a 1950s pulp fiction cover or antique screenprint poster
+a vintage genre print illustration, aged sepia and warm brown tones, retro ink print quality, like a 1950s vintage travel poster lithograph
 ```
 
 **스타일 4 — 드라마틱 신비** (고양이 달 계열)
@@ -205,7 +205,7 @@ A portrait of a sleek black cat with bright yellow eyes, riding a skateboard dow
 ### 예시 5 — 🛸 고양이 UFO 납치 — 스타일 3 (세피아)
 
 ```
-A portrait of a tabby cat with wide startled eyes, being abducted by a UFO beam in a vast desert landscape, arms raised dramatically skyward, cacti and flat horizon in the distance, rendered in a vintage genre print illustration, aged sepia and warm brown tones, retro ink print quality, like a 1950s pulp fiction cover or antique screenprint poster, monochromatic sepia and warm brown, wide establishing shot showing the full scene and background. Print-ready, no text. --ar 1:1 --style raw --s 250
+A portrait of a tabby cat with wide startled eyes, being abducted by a UFO beam in a vast desert landscape, arms raised dramatically skyward, cacti and flat horizon in the distance, rendered in a vintage genre print illustration, aged sepia and warm brown tones, retro ink print quality, like a 1950s vintage travel poster lithograph, monochromatic sepia and warm brown, wide establishing shot showing the full scene and background. Print-ready, no text. --ar 1:1 --style raw --s 250
 ```
 
 ![image.png](image.png)
@@ -215,7 +215,7 @@ A portrait of a tabby cat with wide startled eyes, being abducted by a UFO beam 
 ### 예시 6 — 🤠 강아지 카우보이 — 스타일 3 (더스티올리브)
 
 ```
-A portrait of a wrinkly Shiba Inu with a smug expression and thick rust-colored coat, riding a horse across the Wild West frontier, wearing a cowboy hat, dust kicking up dramatically behind, rendered in a vintage genre print illustration, aged sepia and warm brown tones, retro ink print quality, like a 1950s pulp fiction cover or antique screenprint poster, faded olive and aged cream tones, wide establishing shot showing the full scene and background. Print-ready, no text. --ar 1:1 --style raw --s 250
+A portrait of a wrinkly Shiba Inu with a smug expression and thick rust-colored coat, riding a horse across the Wild West frontier, wearing a cowboy hat, dust kicking up dramatically behind, rendered in a vintage genre print illustration, aged sepia and warm brown tones, retro ink print quality, like a 1950s vintage travel poster lithograph, faded olive and aged cream tones, wide establishing shot showing the full scene and background. Print-ready, no text. --ar 1:1 --style raw --s 250
 ```
 
 ![image.png](image.png)
