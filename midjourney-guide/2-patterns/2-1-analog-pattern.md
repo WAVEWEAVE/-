@@ -1,29 +1,29 @@
-# 2-1) 아날로그 패턴 — 기하 도형 × 정석 아날로그 인쇄 (Strict Seamless)
+# 2-1) 아날로그 패턴 — 클래식 기하·곡선 × 스티플 그레인 (Strict Seamless)
 
-> **원·삼각형·사각형·십자 같은 기하학적 도형을, 실크스크린·리소그래프·리노컷·레터프레스 같은 정석 아날로그 인쇄 매체로 찍어낸 seamless 패턴** 프롬프트입니다. 모티프는 기하 도형, 질감은 손맛 있는 인쇄 잉크, 배치는 타일처럼 수학적으로 정형화 — 바우하우스·미드센추리·북유럽 크래프트 감성에 강해요.
+> **얇은 모노라인 또는 점묘·할프톤 그레인 질감으로 그려낸 고전 기하·곡선 패턴** 프롬프트입니다. 아치·물결·육각 스트라이프·쿼트리폴 같은 클래식 모티프를 스티플 점묘 텍스처나 모노라인으로 표현해 — 럭셔리 패키지·벽지·스테이셔너리·브랜드 배경에 강해요. 아날로그 감성의 핵심은 **스티플(dotwork) 할프톤 그레인** 입니다.
 
 ---
 
 **📌 이 프롬프트는 어떤 용도인가요?**
 
-기하 도형을 **아날로그 인쇄 잉크 질감**으로 표현하되, **위치·크기·방향은 한 치 오차 없이 격자로 반복되는** 정형 타일을 만드는 프롬프트예요.
+**고전 기하·곡선 모티프**를 **모노라인 또는 스티플 그레인 텍스처**로 표현하고, **엄격한 격자 반복**으로 타일링하는 프롬프트예요.
 
 이런 데 쓸 수 있어요:
 
-- 포장지·쇼핑백·리본 surface 디자인
+- 럭셔리 브랜드 패키지·박스·쇼핑백
+- 호텔·리빙 벽지·쿠션·러그
+- 명함·청첩장·레터헤드 배경
 - Spoonflower / Redbubble 원단·벽지
-- 타일·바닥재·세라믹 프린트
-- 노트·다이어리·플래너 커버
-- 브랜드 패키지 배경 (미드센추리·북유럽 감성)
+- 목업 배경 / 웹사이트 히어로
 
-> ⚠️ **회화 매체 금지.** 수채화·파스텔·과슈 같은 그림 매체는 이 가이드 범위가 **아닙니다**. 여기서는 **실크스크린·리소그래프·리노컷·레터프레스·펜 드로잉** 같은 정석 인쇄/드로잉 매체만 사용합니다. 기하 도형 × 인쇄 잉크 질감 × 엄격한 격자, 이 세 가지 조합이 핵심이에요.
+> ⚠️ **"아날로그 = 스티플 그레인" 이 핵심.** 여기서 아날로그는 수채화·판화 잉크가 아니라, **점묘(dotwork)·할프톤·스프레이 그레인 텍스처** 를 뜻해요. 옛날 판화·리소그래프의 거친 점묘 질감 느낌. 모티프는 고전 기하·곡선, 배치는 엄격한 격자 반복이에요.
 >
 
 ---
 
 **🚀 빠른 시작**
 
-1. 아래 2가지 스타일 중 하나를 고르세요. (실크스크린 / 리노컷 판화)
+1. 아래 2가지 스타일 중 하나를 고르세요. (모노라인 / 스티플 그레인)
 2. 원하는 예시를 고르세요. (스타일당 4개, 총 8개)
 3. **"완성 프롬프트"** 를 통째로 복사하세요.
 4. [alpha.midjourney.com](https://alpha.midjourney.com/) 에 붙여넣고 Enter.
@@ -33,97 +33,103 @@
 **📐 마스터 프롬프트 본문**
 
 ```
-Seamless repeating pattern of {motif}, printed in {analog_medium}, arranged in {layout}, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, {color_palette}, on {background}, flat top-down view, tileable surface design, no text, no variation in motif placement. --ar 1:1 --s 200 --tile
+Seamless repeating pattern of {motif}, {rendering_style}, arranged in {layout}, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, {color_palette}, on {background}, flat top-down view, clean classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 180 --tile
 ```
 
 ---
 
 **⚙️ 옵션 파라미터**
 
-| **파라미터** | **스타일 A (실크스크린/리소)** | **스타일 B (리노컷/레터프레스)** | **메모** |
+| **파라미터** | **스타일 A (모노라인)** | **스타일 B (스티플 그레인)** | **메모** |
 | --- | --- | --- | --- |
 | `--ar` | `1:1` | `1:1` | 타일은 정사각형 필수 |
-| `--s` | `150`~`250` | `100`~`200` | 너무 올리면 도형이 복잡해짐 |
+| `--s` | `100`~`200` | `200`~`350` | A 낮을수록 선 깔끔 / B 높을수록 그레인 풍부 |
 | `--tile` | **필수** | **필수** | 빼면 seamless 안 됨 |
 | `--chaos` | `0` (기본) | `0` (기본) | **절대 올리지 말 것** |
-| `--niji 6` | 비추천 | 비추천 | 인쇄 질감이 날아감 |
+| `--niji 6` | 비추천 | 비추천 | 고전 톤이 일러스트화됨 |
 
 ---
 
 **📌 변수 5개 — 모두 필수**
 
-**1. `{motif}` — 어떤 기하 도형을 반복하나요?**
+**1. `{motif}` — 어떤 고전 모티프?**
 
-단일 도형 하나, 또는 2종 교차가 규칙성이 가장 잘 나와요.
+**스타일 A — 모노라인 (얇은 선):**
 
-- `a single solid filled circle dot`
-- `a single equilateral triangle`
-- `a single solid square`
-- `a single diamond (rotated square)`
-- `a single plus sign cross`
-- `a single X mark`
-- `a single solid semicircle arc`
-- `a single short horizontal bar stripe`
-- `a single six-pointed asterisk star`
-- `a solid circle and a triangle alternating in strict ABAB order` *(2종 교차)*
-- `a filled square and a plus sign alternating in strict ABAB order` *(2종 교차)*
+- `a single set of concentric nested arches forming a capsule shape` *(겹친 아치 캡슐)*
+- `a single seigaiha wave scale with three concentric arcs` *(세이가이하 물결)*
+- `a single hexagon filled with parallel vertical stripes` *(스트라이프 육각)*
+- `a single quatrefoil four-petal rosette outline` *(쿼트리폴 네잎꽃)*
+- `a tiny dot and a small X mark alternating in strict ABAB order` *(점·X 교차)*
+- `a single small diamond outline with a center dot` *(다이아 + 점)*
 
-> 💡 **도형은 단순할수록 좋아요.** 복잡한 별·톱니바퀴 같은 건 반복 시 시각적 피로가 심해요. 원·삼각형·사각형·십자가 기본값.
+**스타일 B — 스티플 그레인 (점묘 텍스처):**
+
+- `a single vertical capsule column shape filled with fine stipple dot texture` *(스티플 캡슐 컬럼)*
+- `a single wavy diamond shape filled with pointillism stipple gradient` *(스티플 웨이브 다이아)*
+- `a single large circle filled with halftone dot gradient` *(할프톤 원)*
+- `a single interlocking oval shape filled with dense stipple texture` *(스티플 오벌)*
+- `a single scalloped half-circle filled with spray grain texture` *(그레인 반원)*
+- `a single rounded square tile filled with gradient dotwork texture` *(도트워크 타일)*
+
+> 💡 **스타일 B 모티프는 "속을 스티플로 채운 큰 도형" 이에요.** 아웃라인이 아니라 면 전체가 점묘 그라데이션으로 채워져 있는 게 포인트.
 >
 
-**2. `{analog_medium}` — 어떤 정석 아날로그 매체?**
+**2. `{rendering_style}` — 렌더링 방식**
 
-**스타일 A — 실크스크린 / 리소그래프 계열 (평면 잉크):**
+**스타일 A — 모노라인:**
 
-- `silkscreen print with flat matte ink and subtle ink texture`
-- `risograph print with slightly uneven ink coverage and visible grain`
-- `offset print with soft halftone dot texture`
-- `screen printed poster style with solid flat color and crisp edges`
+- `rendered in ultra-thin crisp hairline strokes, single line weight throughout`
+- `rendered in fine parallel line strokes with equal spacing between lines`
+- `rendered in elegant thin metallic gold lines with crisp vector edges`
 
-**스타일 B — 리노컷 / 레터프레스 계열 (눌림·판화):**
+**스타일 B — 스티플 그레인:**
 
-- `linocut block print with crisp carved edges and visible ink texture`
-- `letterpress print with slight ink impression into paper`
-- `hand-stamped rubber block print with even ink`
-- `woodblock print style with subtle wood grain in the ink`
+- `rendered with dense pointillism stipple dot texture fill, grainy dotwork shading, vintage engraving feel`
+- `rendered with halftone dot gradient fill, fading from dense to sparse dots, classic print grain`
+- `rendered with fine spray grain texture fill, soft airbrushed dotwork, risograph print feel`
+- `rendered with crisp stipple dotwork fill, uniform dot density, vintage etching style`
 
-> 💡 **매체 선택 기준:** A는 깔끔하고 모던한 그래픽 감성 (미드센추리 포스터·북유럽 브랜드). B는 거칠고 공예적인 감성 (인디 스튜디오·크래프트 패키지).
+> 💡 **스타일 B의 "stipple / dotwork / halftone / grain" 키워드가 아날로그 감성의 핵심이에요.** 이거 빼면 그냥 플랫 벡터가 돼요.
 >
 
 **3. `{layout}` — 격자 배치 (정형만)**
 
-**6가지 모두 수학적 정형 격자예요.**
-
-- `a strict square grid, motifs aligned in perfectly straight rows and columns, identical spacing between every motif` *(정방형 그리드 — 기본)*
-- `a half-drop repeat, every other column shifted down by exactly half the motif height, rows perfectly aligned` *(하프 드롭)*
+- `a strict square grid, motifs aligned in perfectly straight rows and columns, identical spacing` *(정방형 그리드)*
+- `a diagonal diamond lattice, motifs placed at every 45-degree grid intersection` *(대각선 다이아)*
+- `a half-drop repeat, every other column shifted down by exactly half the motif height` *(하프 드롭)*
 - `a half-brick repeat, every other row shifted right by exactly half the motif width` *(하프 브릭)*
-- `a diamond lattice, motifs placed on each intersection of a 45-degree grid` *(다이아몬드 격자)*
-- `an ogee lattice, motifs centered inside each interlocking oval cell` *(오지 격자)*
-- `a hexagonal tessellation, motifs centered in each hexagon cell` *(벌집형)*
+- `a hexagonal tessellation, motifs tessellating edge-to-edge in a honeycomb grid` *(벌집 테셀레이션)*
+- `a wave row repeat, motifs arranged in perfectly parallel horizontal wave rows, each row identical` *(물결 평행 반복 — 세이가이하 전용)*
+- `a scalloped row repeat, motifs stacked in offset rows with each scallop tangent to the next` *(스캘럽 오프셋 — 캡슐·아치 전용)*
 
-> 💡 **성공률 순서:** 정방형 > 하프드롭 > 하프브릭 > 다이아몬드 > 오지 > 헥사. 처음엔 반드시 **정방형 그리드**로 시작.
+> 💡 **모티프별 추천 레이아웃:** 세이가이하 → 물결 평행 / 아치·캡슐 → 스캘럽 오프셋 or 하프드롭 / 육각 → 벌집 테셀레이션 / 쿼트리폴 → 다이아 격자.
 >
 
-**4. `{color_palette}` — 색감은? (2~3색 제한)**
+**4. `{color_palette}` — 2~3색 듀오톤/트리톤**
 
-정석 인쇄물은 색 수를 제한해야 인쇄 느낌이 살아나요.
+**스타일 A — 클래식 라인:**
 
-- `deep navy ink on warm cream paper`
-- `rust red and charcoal on ivory`
-- `mustard yellow and black on off-white`
-- `forest green and cream, two-tone print`
-- `burnt orange and deep brown, vintage print palette`
-- `cobalt blue and red on ivory, classic risograph duotone`
-- `single black ink on natural kraft paper`
-- `olive green and terracotta on cream`
+- `thin cream lines on deep navy background, classic luxury`
+- `metallic gold lines on charcoal grey, art deco palette`
+- `teal line strokes on warm cream, vintage oriental palette`
+- `soft dusty blue on warm cream, muted vintage wallpaper palette`
 
-**5. `{background}` — 배경 종이 질감은?**
+**스타일 B — 스티플 그레인:**
 
-- `warm cream paper with subtle fiber texture`
-- `aged off-white paper with faint grain`
-- `ivory cardstock with slight tooth`
-- `natural kraft paper with soft brown warmth`
-- `textured printmaking paper with visible fiber`
+- `warm cream stippled motifs on deep navy, vintage print palette`
+- `cream dotwork on dark charcoal, engraving palette`
+- `ivory stipple on midnight navy, classic etching palette`
+- `tan stippled texture on black background, vintage poster palette`
+
+**5. `{background}` — 배경 톤**
+
+- `deep navy background`
+- `charcoal grey background`
+- `midnight blue background`
+- `warm cream paper`
+- `ivory background`
+- `soft muted grey background`
 
 ---
 
@@ -131,66 +137,66 @@ Seamless repeating pattern of {motif}, printed in {analog_medium}, arranged in {
 
 ---
 
-**예시 1 — ⚫ 실크스크린 원 정방형 그리드 — 스타일 A**
+**예시 1 — 🌊 모노라인 세이가이하 물결 — 스타일 A**
 
 ```
-Seamless repeating pattern of a single solid filled circle dot, printed in silkscreen print with flat matte ink and subtle ink texture, arranged in a strict square grid, motifs aligned in perfectly straight rows and columns, identical spacing between every motif, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, deep navy ink on warm cream paper, on warm cream paper with subtle fiber texture, flat top-down view, tileable surface design, no text, no variation in motif placement. --ar 1:1 --s 180 --tile
-```
-
----
-
-**예시 2 — 🔺 리소그래프 삼각형 하프드롭 — 스타일 A**
-
-```
-Seamless repeating pattern of a single equilateral triangle, printed in risograph print with slightly uneven ink coverage and visible grain, arranged in a half-drop repeat, every other column shifted down by exactly half the motif height, rows perfectly aligned, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, mustard yellow and black on off-white, on ivory cardstock with slight tooth, flat top-down view, tileable surface design, no text, no variation in motif placement. --ar 1:1 --s 200 --tile
+Seamless repeating pattern of a single seigaiha wave scale with three concentric arcs, rendered in ultra-thin crisp hairline strokes, single line weight throughout, arranged in a wave row repeat, motifs arranged in perfectly parallel horizontal wave rows, each row identical, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, teal line strokes on warm cream, vintage oriental palette, on warm cream paper, flat top-down view, clean classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 150 --tile
 ```
 
 ---
 
-**예시 3 — ➕ 실크스크린 십자 하프브릭 — 스타일 A**
+**예시 2 — 🌀 모노라인 겹친 아치 캡슐 — 스타일 A**
 
 ```
-Seamless repeating pattern of a single plus sign cross, printed in screen printed poster style with solid flat color and crisp edges, arranged in a half-brick repeat, every other row shifted right by exactly half the motif width, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, rust red and charcoal on ivory, on aged off-white paper with faint grain, flat top-down view, tileable surface design, no text, no variation in motif placement. --ar 1:1 --s 180 --tile
-```
-
----
-
-**예시 4 — ⬛➕ 리소 사각·십자 교차 그리드 — 스타일 A**
-
-```
-Seamless repeating pattern of a filled square and a plus sign alternating in strict ABAB order, printed in risograph print with slightly uneven ink coverage and visible grain, arranged in a strict square grid, motifs aligned in perfectly straight rows and columns, identical spacing between every motif, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, cobalt blue and red on ivory, classic risograph duotone, on textured printmaking paper with visible fiber, flat top-down view, tileable surface design, no text, no variation in motif placement. --ar 1:1 --s 200 --tile
+Seamless repeating pattern of a single set of concentric nested arches forming a capsule shape, rendered in elegant thin metallic gold lines with crisp vector edges, arranged in a scalloped row repeat, motifs stacked in offset rows with each scallop tangent to the next, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, metallic gold lines on charcoal grey, art deco palette, on charcoal grey background, flat top-down view, clean classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 180 --tile
 ```
 
 ---
 
-**예시 5 — ♦️ 리노컷 다이아몬드 격자 — 스타일 B**
+**예시 3 — ⬡ 모노라인 스트라이프 육각 벌집 — 스타일 A**
 
 ```
-Seamless repeating pattern of a single diamond (rotated square), printed in linocut block print with crisp carved edges and visible ink texture, arranged in a diamond lattice, motifs placed on each intersection of a 45-degree grid, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, forest green and cream, two-tone print, on natural kraft paper with soft brown warmth, flat top-down view, tileable surface design, no text, no variation in motif placement. --ar 1:1 --s 150 --tile
-```
-
----
-
-**예시 6 — ✖️ 레터프레스 X 정방형 그리드 — 스타일 B**
-
-```
-Seamless repeating pattern of a single X mark, printed in letterpress print with slight ink impression into paper, arranged in a strict square grid, motifs aligned in perfectly straight rows and columns, identical spacing between every motif, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, single black ink on natural kraft paper, on natural kraft paper with soft brown warmth, flat top-down view, tileable surface design, no text, no variation in motif placement. --ar 1:1 --s 130 --tile
+Seamless repeating pattern of a single hexagon filled with parallel vertical stripes, rendered in fine parallel line strokes with equal spacing between lines, arranged in a hexagonal tessellation, motifs tessellating edge-to-edge in a honeycomb grid, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, metallic gold lines on charcoal grey, art deco palette, on charcoal grey background, flat top-down view, clean classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 180 --tile
 ```
 
 ---
 
-**예시 7 — ◗ 리노컷 반원 헥사곤 — 스타일 B**
+**예시 4 — ✦ 모노라인 쿼트리폴 다이아 격자 — 스타일 A**
 
 ```
-Seamless repeating pattern of a single solid semicircle arc, printed in hand-stamped rubber block print with even ink, arranged in a hexagonal tessellation, motifs centered in each hexagon cell, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, burnt orange and deep brown, vintage print palette, on textured printmaking paper with visible fiber, flat top-down view, tileable surface design, no text, no variation in motif placement. --ar 1:1 --s 160 --tile
+Seamless repeating pattern of a single quatrefoil four-petal rosette outline, rendered in ultra-thin crisp hairline strokes, single line weight throughout, arranged in a diagonal diamond lattice, motifs placed at every 45-degree grid intersection, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, soft dusty blue on warm cream, muted vintage wallpaper palette, on soft muted grey background, flat top-down view, clean classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 150 --tile
 ```
 
 ---
 
-**예시 8 — ⚫🔺 우드블록 원·삼각 교차 하프드롭 — 스타일 B**
+**예시 5 — ⬢ 스티플 캡슐 컬럼 하프드롭 — 스타일 B**
 
 ```
-Seamless repeating pattern of a solid circle and a triangle alternating in strict ABAB order, printed in woodblock print style with subtle wood grain in the ink, arranged in a half-drop repeat, every other column shifted down by exactly half the motif height, rows perfectly aligned, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, olive green and terracotta on cream, on ivory cardstock with slight tooth, flat top-down view, tileable surface design, no text, no variation in motif placement. --ar 1:1 --s 170 --tile
+Seamless repeating pattern of a single vertical capsule column shape filled with fine stipple dot texture, rendered with dense pointillism stipple dot texture fill, grainy dotwork shading, vintage engraving feel, arranged in a half-drop repeat, every other column shifted down by exactly half the motif height, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, warm cream stippled motifs on deep navy, vintage print palette, on deep navy background, flat top-down view, clean classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 280 --tile
+```
+
+---
+
+**예시 6 — ◆ 스티플 웨이브 다이아 그리드 — 스타일 B**
+
+```
+Seamless repeating pattern of a single wavy diamond shape filled with pointillism stipple gradient, rendered with halftone dot gradient fill, fading from dense to sparse dots, classic print grain, arranged in a strict square grid, motifs aligned in perfectly straight rows and columns, identical spacing, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, ivory stipple on midnight navy, classic etching palette, on midnight blue background, flat top-down view, clean classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 300 --tile
+```
+
+---
+
+**예시 7 — ⬭ 스티플 인터로킹 오벌 하프브릭 — 스타일 B**
+
+```
+Seamless repeating pattern of a single interlocking oval shape filled with dense stipple texture, rendered with fine spray grain texture fill, soft airbrushed dotwork, risograph print feel, arranged in a half-brick repeat, every other row shifted right by exactly half the motif width, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, tan stippled texture on black background, vintage poster palette, on charcoal grey background, flat top-down view, clean classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 280 --tile
+```
+
+---
+
+**예시 8 — ◖ 스티플 반원 스캘럽 — 스타일 B**
+
+```
+Seamless repeating pattern of a single scalloped half-circle filled with spray grain texture, rendered with crisp stipple dotwork fill, uniform dot density, vintage etching style, arranged in a scalloped row repeat, motifs stacked in offset rows with each scallop tangent to the next, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, cream dotwork on dark charcoal, engraving palette, on deep navy background, flat top-down view, clean classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 320 --tile
 ```
 
 ---
@@ -199,11 +205,10 @@ Seamless repeating pattern of a solid circle and a triangle alternating in stric
 
 | **이걸 바꾸시면** | **효과** |
 | --- | --- |
-| `{motif}` 고정 + `{layout}` 변경 | 같은 도형으로 격자 구조 시리즈 |
-| `{layout}` 고정 + `{motif}` 변경 | 같은 격자의 도형 컬렉션 |
-| `{analog_medium}` A → B | 모던 포스터 → 공예 크래프트 전환 |
-| `{color_palette}` 를 듀오톤으로 | 리소그래프·실크스크린 감성 극대화 |
-| `--s` 값 낮춤 | 도형이 더 단순·선명 |
+| `{motif}` 고정 + `{rendering_style}` A → B | 모노라인 → 스티플 그레인 (같은 모티프 2버전) |
+| `{layout}` 고정 + `{motif}` 변경 | 같은 격자의 고전 모티프 컬렉션 |
+| `{color_palette}` 네이비 → 차콜/미드나잇 | 같은 클래식 기조 내 깊이감 변주 |
+| `--s` 값 상승 (스타일 B) | 스티플 그레인 질감 극대화 |
 | `--tile` 제거 | seamless 실패 (절대 금지) |
 | `--chaos` 상승 | 규칙성 붕괴 (절대 금지) |
 
@@ -211,20 +216,20 @@ Seamless repeating pattern of a solid circle and a triangle alternating in stric
 
 **⚠️ 핵심 팁 5가지**
 
-1. **"정석 아날로그 인쇄" 매체만 쓰세요.** 실크스크린·리소·리노컷·레터프레스·우드블록·스탬프 — 이 6종이 전부예요. 수채화·파스텔·과슈 같은 회화 매체는 이 가이드에 안 맞아요.
-2. **규칙성 키워드는 무조건 박으세요.** `strict grid`, `mathematically precise`, `identical in size shape and orientation`, `no variation in motif placement` — 이거 빠지면 배치가 흐트러져요.
-3. **도형 1종 또는 2종 교차만.** 3종 이상이면 격자가 무너져요. 2종은 반드시 `alternating in strict ABAB order` 로 교차 규칙 명시.
-4. **색은 2~3색 듀오톤/트리톤.** 정석 인쇄는 색 수 제한이 핵심. 4색 이상이면 인쇄 느낌이 날아가요.
-5. **반드시 2x2 타일 테스트.** 포토샵 「패턴으로 정의」 로 큰 캔버스에 깔아보고 이음매·크기·위치를 확인. 한 번에 성공 어려움 — 4~8회 재생성 각오.
+1. **"아날로그 = 스티플 그레인".** 스타일 B 를 쓸 때 `stipple / dotwork / halftone / spray grain / pointillism` 이 네 단어 중 반드시 하나 이상 넣으세요. 이게 아날로그 감성의 핵심이에요.
+2. **모티프 1종 원칙.** 고전 곡선·기하 모티프는 복잡해서 2종 섞으면 격자가 무너져요. **단일 모티프 반복**이 정석. 점·X 같은 초소형 모티프만 예외적으로 ABAB 교차 허용.
+3. **규칙성 키워드 필수.** `strict`, `mathematically precise`, `identical in size shape and orientation`, `no variation in motif placement` — 빠지면 배치 흐트러짐.
+4. **모티프별 레이아웃 매칭.** 세이가이하 → 물결 평행 / 아치 → 스캘럽 오프셋 / 육각 → 벌집 / 쿼트리폴 → 다이아 — 이 궁합을 벗어나면 고전미가 안 살아요.
+5. **스티플 스타일은 `--s 250~350`.** 그레인 질감은 stylize 값이 높아야 풍부하게 나와요. 반대로 모노라인은 `--s 100~180` 으로 억제해야 선이 깔끔.
 
 ---
 
 **✅ 시리즈 만드는 추천 흐름**
 
-1. **도형 1종** + **매체 1종** + **격자 1종** 을 정하세요.
-2. 같은 조합으로 **컬러만 3~4가지 변주** (딥 네이비 / 머스터드 / 러스트 / 포레스트).
-3. 마음에 드는 컷에서 `--seed [번호]` 고정해 인쇄 질감 일관성 유지.
-4. 한 컬렉션 = 한 도형 (예: 원 시리즈 4색, 삼각 시리즈 4색).
+1. **스타일 (A 모노라인 or B 스티플)** 하나 선택.
+2. 같은 스타일 × 같은 컬러 팔레트로 **고전 모티프 4종 (아치·물결·육각·쿼트리폴)** 변주.
+3. `--seed [번호]` 고정으로 선 두께·그레인 밀도 일관성 유지.
+4. 시리즈 내 컬러 팔레트는 한 가지로 통일 (전부 네이비+크림 또는 전부 차콜+골드).
 
-> 💡 **상시판매형 추천 조합.** ① 리소그래프 듀오톤 기하 시리즈 (원·삼각·사각·십자 4종) — 미드센추리 포스터·패키지. ② 리노컷 단색 크래프트 시리즈 — 인디 브랜드·공예 패키지. ③ 실크스크린 2색 교차 패턴 (ABAB) — 원단·벽지·타일.
+> 💡 **상시판매형 추천 조합.** ① 스티플 그레인 네이비+크림 4종 (캡슐·웨이브·오벌·반원) — 럭셔리 박스·벽지. ② 모노라인 골드 아트데코 4종 (육각·아치·쿼트리폴·다이아) — 호텔 어메니티·청첩장. ③ 모노라인 세이가이하 + 스티플 웨이브 페어 — 오리엔탈 감성 라인업.
 >
