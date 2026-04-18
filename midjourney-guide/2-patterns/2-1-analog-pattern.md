@@ -1,6 +1,6 @@
 # 2-1) 아날로그 패턴 — 정형화된 기하 타일
 
-> **정형화된 기하 모티프를 타일처럼 규칙적으로 반복**시키는 seamless 패턴 프롬프트입니다. 점·X 스테이셔너리, 3색 8포인트 스타 벽지, 쿼트리폴 바닥타일, 아이소 3D 큐브 — 4가지 검증된 스타일을 제공합니다. 명함·청첩장·벽지·원단·세라믹 타일에 바로 쓸 수 있어요.
+> **정형화된 기하 모티프를 타일처럼 규칙적으로 반복**시키는 seamless 패턴 프롬프트입니다. 점·X 스테이셔너리, 3색 8포인트 스타 벽지, 쿼트리폴 바닥타일, 플랫 헥사곤 허니콤 — 4가지 검증된 스타일을 제공합니다. 명함·청첩장·벽지·원단·세라믹 타일에 바로 쓸 수 있어요.
 
 ---
 
@@ -24,7 +24,7 @@
 
 ## 🚀 빠른 시작
 
-1. 아래 **스타일 A (스테이셔너리)** · **B (스타 벽지)** · **C (바닥타일)** · **D (아이소 3D)** 중 하나를 고르세요.
+1. 아래 **스타일 A (스테이셔너리)** · **B (스타 벽지)** · **C (바닥타일)** · **D (헥사곤 허니콤)** 중 하나를 고르세요.
 2. 원하는 예시를 고르세요. (스타일당 2개, 총 8개)
 3. **"완성 프롬프트"** 를 통째로 복사하세요.
 4. [alpha.midjourney.com](https://alpha.midjourney.com/) 에 붙여넣고 Enter.
@@ -76,11 +76,12 @@ Seamless repeating pattern of {motif}, {art_style}, arranged as a {grid_count} {
 - `a single bold 6-petal rosette flower`
 - `a single bold four-leaf clover shape`
 
-**스타일 D — 아이소메트릭 3D:**
+**스타일 D — 플랫 헥사곤 허니콤:**
 
-- `a single isometric 3D cube with three visible faces in three distinct flat color tones`
-- `a single isometric 3D hexagonal prism with three visible faces`
-- `a single isometric 3D stacked double-cube with three visible faces`
+- `a single flat solid hexagon`
+- `a single flat hexagon with a small filled dot at the center`
+- `a single flat hexagon with a smaller concentric hexagon inside in a lighter tone`
+- `a single flat hexagon with a small 6-point star inside`
 
 > 💡 **모티프 1종 원칙.** 점·X ABAB 교차만 예외. 그 외엔 단일 모티프 반복이 정석이에요.
 >
@@ -105,18 +106,18 @@ rendered as a flat solid color silhouette with a slightly darker inner layer for
 rendered as a solid flat color silhouette with crisp vector edges, no outline, mid-century bistro floor tile aesthetic
 ```
 
-**스타일 D — 🟥 아이소 3D 큐브** (아이소메트릭 3D 계열)
+**스타일 D — 🔷 플랫 헥사곤 허니콤** (평면 벌집 타일 계열)
 
 ```
-rendered as an isometric 3D shape with three flat color tones for top, left, and right faces, creating a continuous 3D illusion tessellation
+rendered as a flat solid color silhouette with crisp vector edges, no outline, motifs rotating through three colors in strict ABCABC order, classic honeycomb tile aesthetic
 ```
 
 > 💡 **스타일 선택 기준**
 >
-> |  | **A 스테이셔너리** | **B 스타 벽지** | **C 바닥타일** | **D 아이소 3D** |
+> |  | **A 스테이셔너리** | **B 스타 벽지** | **C 바닥타일** | **D 헥사곤 허니콤** |
 > | --- | --- | --- | --- | --- |
-> | 무드 | 미니멀 · 클래식 | 빈티지 · 귀여움 | 미드센추리 · 그래픽 | 모던 · 3차원 |
-> | 어울리는 상품 | 명함·청첩장 | 벽지·쿠션 | 타일·에코백 | 박스·웹 배경 |
+> | 무드 | 미니멀 · 클래식 | 빈티지 · 귀여움 | 미드센추리 · 그래픽 | 모던 · 그래픽 |
+> | 어울리는 상품 | 명함·청첩장 | 벽지·쿠션 | 타일·에코백 | 벽지·박스·웹 배경 |
 > | 모티프 크기 | 아주 작게 | 큼직 | 중간 | 중간·큼직 |
 
 ### 3. `{color_palette}` — 색감은? (전부 밝은 톤만)
@@ -144,13 +145,13 @@ rendered as an isometric 3D shape with three flat color tones for top, left, and
 - `coral motifs on powder blue background`
 - `lavender motifs on warm ivory background`
 
-**스타일 D** — 3톤 아이소 큐브:
+**스타일 D** — ABCABC 3색 로테이션 허니콤:
 
-- `butter cream lightest face, peach medium face, coral pink deeper face, on warm cream background`
-- `mint lightest face, soft sage medium face, sage green deeper face, on ivory background`
-- `ivory lightest face, powder blue medium face, dusty blue deeper face, on cream background`
-- `cream lightest face, butter yellow medium face, warm mustard deeper face, on warm cream background`
-- `soft lavender lightest face, dusty lilac medium face, plum deeper face, on ivory background`
+- `rotating through three colors in strict ABCABC order (butter cream, peach, and coral pink), on warm cream background`
+- `rotating through three colors in strict ABCABC order (mint, soft sage, and powder blue), on ivory background`
+- `rotating through three colors in strict ABCABC order (lavender, dusty pink, and butter yellow), on cream background`
+- `rotating through three colors in strict ABCABC order (ivory, powder blue, and dusty lilac), on warm cream background`
+- `rotating through three colors in strict ABCABC order (soft sage, cream, and coral), on ivory background`
 
 > 💡 **"pastel" 막연한 표현 피하세요.** `dusty pink`, `butter yellow`, `soft sage` 처럼 **구체적인 색 이름** 이 훨씬 또렷하게 나와요.
 >
@@ -175,9 +176,9 @@ rendered as an isometric 3D shape with three flat color tones for top, left, and
 - `half-drop repeat, every other column shifted down by exactly half the motif height` *(스타일 B 기본)*
 - `half-brick repeat, every other row shifted right by exactly half the motif width` *(스타일 B 변주)*
 - `strict square grid with motifs touching at corners` *(스타일 C 전용)*
-- `isometric tessellation where shapes tile edge-to-edge creating a continuous 3D illusion` *(스타일 D 전용)*
+- `honeycomb tessellation, every row shifted by half the hexagon width, hexagons edge-to-edge with no gaps` *(스타일 D 전용)*
 
-> 💡 **스타일 × 레이아웃 궁합은 위 표기대로.** A엔 다이아, B엔 하프드롭/하프브릭, C엔 엣지터치 그리드, D엔 아이소 테셀 — 벗어나면 해당 스타일의 느낌이 깨져요.
+> 💡 **스타일 × 레이아웃 궁합은 위 표기대로.** A엔 다이아, B엔 하프드롭/하프브릭, C엔 엣지터치 그리드, D엔 허니콤 테셀 — 벗어나면 해당 스타일의 느낌이 깨져요.
 >
 
 ---
@@ -234,18 +235,18 @@ Seamless repeating pattern of a single bold 6-petal rosette flower, rendered as 
 
 ---
 
-### 예시 7 — 🟥 아이소 3D 큐브 (핑크 3톤) — 스타일 D
+### 예시 7 — 🔷 플랫 헥사곤 허니콤 (핑크·피치·코랄) — 스타일 D
 
 ```
-Seamless repeating pattern of a single isometric 3D cube with three visible faces in three distinct flat color tones, rendered as an isometric 3D shape with three flat color tones for top, left, and right faces, creating a continuous 3D illusion tessellation, arranged as a clear 4 by 4 grid isometric tessellation where shapes tile edge-to-edge creating a continuous 3D illusion, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, butter cream lightest face, peach medium face, coral pink deeper face, on warm cream background, flat top-down view, bright classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 200 --tile
+Seamless repeating pattern of a single flat solid hexagon, rendered as a flat solid color silhouette with crisp vector edges, no outline, motifs rotating through three colors in strict ABCABC order, classic honeycomb tile aesthetic, arranged as a clear 4 by 4 grid honeycomb tessellation, every row shifted by half the hexagon width, hexagons edge-to-edge with no gaps, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, rotating through three colors in strict ABCABC order (butter cream, peach, and coral pink), on warm cream background, flat top-down view, bright classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 200 --tile
 ```
 
 ---
 
-### 예시 8 — 🟥 아이소 육각 프리즘 (민트 3톤) — 스타일 D
+### 예시 8 — 🔷 센터 도트 헥사곤 허니콤 (민트·세이지·블루) — 스타일 D
 
 ```
-Seamless repeating pattern of a single isometric 3D hexagonal prism with three visible faces, rendered as an isometric 3D shape with three flat color tones for top, left, and right faces, creating a continuous 3D illusion tessellation, arranged as a clear 4 by 4 grid isometric tessellation where shapes tile edge-to-edge creating a continuous 3D illusion, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, mint lightest face, soft sage medium face, sage green deeper face, on ivory background, flat top-down view, bright classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 200 --tile
+Seamless repeating pattern of a single flat hexagon with a small filled dot at the center, rendered as a flat solid color silhouette with crisp vector edges, no outline, motifs rotating through three colors in strict ABCABC order, classic honeycomb tile aesthetic, arranged as a clear 5 by 5 grid honeycomb tessellation, every row shifted by half the hexagon width, hexagons edge-to-edge with no gaps, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, rotating through three colors in strict ABCABC order (mint, soft sage, and powder blue), on ivory background, flat top-down view, bright classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 200 --tile
 ```
 
 ---
@@ -267,7 +268,7 @@ Seamless repeating pattern of a single isometric 3D hexagonal prism with three v
 
 ## ⚠️ 핵심 팁 5가지
 
-1. **스타일·모티프·레이아웃 궁합을 지키세요.** A→다이아·마크 / B→하프드롭·스타 / C→엣지터치·로제트 / D→아이소테셀·큐브. 섞으면 스타일의 정체성이 깨져요.
+1. **스타일·모티프·레이아웃 궁합을 지키세요.** A→다이아·마크 / B→하프드롭·스타 / C→엣지터치·로제트 / D→허니콤·헥사곤. 섞으면 스타일의 정체성이 깨져요.
 2. **그리드 카운트는 숫자로 박으세요.** `a 3 by 3 / a 4 by 4 / a 5 by 5`. 모호한 "small motif" 대신 개수 지정이 규칙성을 유지해줘요.
 3. **색은 전부 밝은 톤.** 구체적인 색 이름으로 (`dusty pink`, `butter yellow`, `soft mint`). "pastel" 같은 막연한 단어는 피하세요.
 4. **규칙성 키워드 필수.** `strict`, `mathematically precise repeat`, `identical in size shape and orientation`, `no variation in motif placement` — 하나라도 빠지면 흐트러져요.
@@ -282,5 +283,5 @@ Seamless repeating pattern of a single isometric 3D hexagonal prism with three v
 3. 첫 결과의 `--seed` 를 다음에 붙여 비례·톤 일관성 유지.
 4. `--sref [첫 결과 URL]` 추가하면 완벽한 패턴 컬렉션.
 
-> 💡 **상시판매형 추천 조합.** ① 스타일 A 스테이셔너리 4색 (세이지·핑크·블루·옐로우) — 명함·청첩장. ② 스타일 B 3색 로테이션 4계절 (봄·여름·가을·겨울 팔레트) — 벽지 컬렉션. ③ 스타일 C 쿼트리폴·로제트·클로버 3종 듀오톤 — 카페 타일. ④ 스타일 D 아이소 큐브 4톤 컴비 — 럭셔리 박스·웹 배경.
+> 💡 **상시판매형 추천 조합.** ① 스타일 A 스테이셔너리 4색 (세이지·핑크·블루·옐로우) — 명함·청첩장. ② 스타일 B 3색 로테이션 4계절 (봄·여름·가을·겨울 팔레트) — 벽지 컬렉션. ③ 스타일 C 쿼트리폴·로제트·클로버 3종 듀오톤 — 카페 타일. ④ 스타일 D 헥사곤 허니콤 ABCABC 4팔레트 — 모던 벽지·박스.
 >
