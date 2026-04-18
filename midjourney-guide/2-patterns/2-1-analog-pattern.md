@@ -1,22 +1,22 @@
-# 2-1) 아날로그 패턴 — 규칙적 반복 (Seamless)
+# 2-1) 아날로그 패턴 — 정형화된 격자 반복 (Strict Seamless)
 
-> **손으로 그린 듯한 아날로그 감성을 규칙적으로 반복시키는 seamless 패턴** 프롬프트입니다. 수채화 번짐·색연필 결·스탬프 자국·리노컷 판화 느낌을 살려, 포장지·원단·벽지·노트 커버에 강해요. `--tile` 파라미터가 핵심이에요 — 이게 없으면 그냥 일러스트가 돼요.
+> **손으로 그린 아날로그 질감을, 타일처럼 수학적으로 정형화된 격자 위에서 완벽하게 똑같이 반복시키는 seamless 패턴** 프롬프트입니다. 수채화·리노컷 판화 느낌을 살리되 — **위치·크기·간격은 오차 없이 동일**하게 고정돼요. 포장지·원단·벽지·타일에 바로 쓸 수 있어요.
 
 ---
 
 **📌 이 프롬프트는 어떤 용도인가요?**
 
-손그림 질감이 살아 있는 모티프를 **상하좌우로 끊김 없이 이어지는 타일**로 만드는 프롬프트예요.
+손그림 질감은 살리되, **모티프의 위치·크기·방향이 한 치 오차 없이 격자 위에서 반복되는** 정형 타일을 만드는 프롬프트예요.
 
 이런 데 쓸 수 있어요:
 
 - 포장지·리본·쇼핑백 surface 디자인
 - Spoonflower / Redbubble 원단·벽지 판매
+- 타일·바닥재·세라믹 프린트
 - 노트·다이어리·플래너 내지·커버
 - 굿즈 배경 패턴 (에코백·파우치·폰케이스)
-- 브랜드 패키지 배경 패턴
 
-> ⚠️ **`--tile` 파라미터가 없으면 seamless 반복이 안 돼요.** 이어붙였을 때 경계선이 티 나면 실패예요. 포토샵 「패턴으로 정의」 나 [pattern.monster](http://pattern.monster) 에서 반드시 연결 테스트를 하세요.
+> ⚠️ **"규칙적"이 핵심이에요.** 스캐터·랜덤·자연스러운 배치는 이 가이드 범위가 **아닙니다**. 여기서는 모든 모티프가 **똑같은 크기·똑같은 간격·똑같은 방향**으로 반복돼야 해요. `--tile` 은 필수, 프롬프트에 "strict grid / mathematically precise / identical / uniform" 같은 규칙성 키워드를 반드시 넣어야 합니다.
 >
 
 ---
@@ -33,7 +33,7 @@
 **📐 마스터 프롬프트 본문**
 
 ```
-Seamless repeating pattern of {motif}, {analog_medium}, {layout}, {color_palette}, on {background}, tileable surface design, evenly spaced repeat, no text. --ar 1:1 --s 250 --tile
+Seamless repeating pattern of {motif}, rendered in {analog_medium}, arranged in {layout}, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, {color_palette}, on {background}, flat top-down view, tileable surface design, no text, no variation in motif placement. --ar 1:1 --s 250 --tile
 ```
 
 ---
@@ -43,8 +43,9 @@ Seamless repeating pattern of {motif}, {analog_medium}, {layout}, {color_palette
 | **파라미터** | **스타일 A (수채화 보태니컬)** | **스타일 B (리노컷 판화)** | **메모** |
 | --- | --- | --- | --- |
 | `--ar` | `1:1` | `1:1` | 타일은 정사각형 필수 |
-| `--s` | `250`~`400` | `150`~`250` | A는 번짐 풍부, B는 선 강조 |
+| `--s` | `200`~`350` | `100`~`200` | 높으면 질감↑ 규칙성↓ |
 | `--tile` | **필수** | **필수** | 빼면 seamless 안 됨 |
+| `--chaos` | `0` (기본 유지) | `0` (기본 유지) | **절대 올리지 말 것** — 배치가 랜덤해짐 |
 | `--niji 6` | 비추천 | 비추천 | 아날로그 질감이 날아감 |
 
 ---
@@ -53,59 +54,61 @@ Seamless repeating pattern of {motif}, {analog_medium}, {layout}, {color_palette
 
 **1. `{motif}` — 무엇이 반복되나요?**
 
-아날로그 패턴은 모티프가 단순할수록 반복했을 때 예뻐요.
+정형 반복에서는 **한 종류의 단일 모티프** 또는 **2종이 교차**하는 게 제일 규칙적으로 나와요.
 
-- `small wildflowers and tiny leaves`
-- `vintage botanical herbs and dried stems`
-- `tiny citrus fruits — lemons, oranges, and leaves`
-- `scattered mushrooms and forest ferns`
-- `simple geometric diamonds and dots`
-- `hand-drawn stars and crescent moons`
-- `tiny birds, twigs, and berries`
-- `coffee cups, beans, and croissants`
+- `a single small wildflower bloom` *(단일 꽃 한 송이)*
+- `one sprig of lavender` *(라벤더 한 가지)*
+- `a single lemon with one leaf` *(레몬 하나)*
+- `one small mushroom` *(버섯 한 개)*
+- `a single snowflake` *(눈송이 한 개)*
+- `one small star and one crescent moon alternating` *(별·달 2종 교차)*
+- `a single simple diamond shape` *(다이아몬드 단일)*
+- `one coffee bean` *(커피콩 한 알)*
 
-> 💡 **모티프는 2~3종류 섞는 게 제일 예뻐요.** 꽃 하나만 반복하면 단조롭고, 5가지 이상 섞으면 어지러워요.
+> 💡 **모티프가 많을수록 규칙성이 깨져요.** 정형 타일은 **1~2종**이 황금비율. 3종 이상 쓰고 싶으면 `alternating in strict ABAB order` 같은 교차 규칙을 명시하세요.
 >
 
 **2. `{analog_medium}` — 어떤 아날로그 매체인가요?**
 
+매체는 **질감**만 담당하고 **배치 규칙성은 레이아웃이 담당**해요. 매체 설명에 "uneven / slight misalignment / hand-drawn imperfection" 같은 문구는 빼세요 — 위치까지 흐트러져요.
+
 **스타일 A — 수채화 보태니컬:**
 
-- `loose watercolor painting with soft bleeding edges and visible pigment pooling`
-- `delicate watercolor wash with gentle granulation texture`
-- `gouache painting with matte opaque finish and visible brushstrokes`
+- `clean watercolor painting with soft pigment and gentle edges`
+- `tidy watercolor wash with subtle granulation, crisp silhouette`
+- `gouache painting with matte opaque finish and clean brushstrokes`
 
 **스타일 B — 리노컷 판화:**
 
-- `linocut block print with rough carved lines and ink texture`
-- `hand-stamped potato print with uneven ink distribution`
-- `woodblock print style with visible grain and slight misalignment`
-- `vintage rubber stamp print with faded ink edges`
+- `linocut block print with crisp carved lines and even ink coverage`
+- `clean hand-stamped print with uniform ink, sharp edges`
+- `woodblock print style with visible grain but clean impressions`
+- `vintage rubber stamp print with consistent pressure`
 
-**3. `{layout}` — 배치는 어떻게?**
+**3. `{layout}` — 격자 배치 (정형만)**
 
-반복 배치 방식이 패턴 전체 분위기를 결정해요.
+**모두 수학적으로 정형화된 격자만 포함되어 있어요.**
 
-- `evenly spaced grid layout, each motif repeated at regular intervals` *(정방형 그리드 — 가장 기본)*
-- `half-drop repeat, motifs staggered in alternating rows` *(하프 드롭 — 클래식)*
-- `diamond grid layout with motifs on each lattice point` *(다이아몬드 격자)*
-- `scattered random-looking arrangement but seamlessly tileable` *(스캐터 — 자연스러움)*
-- `densely packed mosaic with motifs touching edges` *(밀집 배치)*
-- `loose airy arrangement with generous negative space between motifs` *(여백 많음)*
+- `a strict square grid, motifs aligned in perfectly straight rows and columns, identical spacing between every motif` *(정방형 격자 — 가장 규칙적)*
+- `a half-drop repeat, every other column shifted down by exactly half the motif height, rows perfectly aligned` *(하프 드롭 — 클래식)*
+- `a half-brick repeat, every other row shifted right by exactly half the motif width` *(하프 브릭 — 벽돌식)*
+- `a diamond lattice, motifs placed on each intersection of a 45-degree grid` *(다이아몬드 격자)*
+- `an ogee lattice, motifs centered inside each interlocking oval cell` *(오지 격자 — 고전)*
+- `a hexagonal tessellation, motifs centered in each hexagon cell` *(벌집형)*
 
-> 💡 **seamless 성공률 순서:** 그리드 > 하프드롭 > 다이아몬드 > 스캐터. 초보자는 그리드로 시작하세요.
+> 💡 **성공률 순서:** 정방형 그리드 > 하프드롭 > 하프브릭 > 다이아몬드 > 오지 > 헥사. 초보자는 반드시 **정방형 그리드**부터 시작하세요.
 >
 
 **4. `{color_palette}` — 색감은?**
 
-**스타일 A** — 수채화 투명감:
+**스타일 A** — 수채화 투명감 (2~3색):
 
 - `soft sage green and dusty pink, muted watercolor tones`
 - `warm terracotta and cream, earthy watercolor palette`
 - `dusty lavender and mint, gentle pastel watercolor`
 - `ochre yellow and olive green, vintage botanical palette`
 
-**스타일 B** — 판화 2~3색 제한:
+**스타일 B** — 판화 2색 제한:
 
 - `deep indigo ink on warm cream`
 - `rust red and charcoal on ivory paper`
@@ -114,10 +117,8 @@ Seamless repeating pattern of {motif}, {analog_medium}, {layout}, {color_palette
 
 **5. `{background}` — 배경 종이 질감은?**
 
-아날로그 감성의 핵심은 "종이 위에 그린 듯한" 배경이에요.
-
 - `warm cream paper with subtle fiber texture`
-- `aged off-white watercolor paper with slight grain`
+- `aged off-white watercolor paper with faint grain`
 - `natural linen canvas texture background`
 - `ivory paper with faint vintage yellowing`
 - `kraft paper with soft brown warmth`
@@ -128,66 +129,66 @@ Seamless repeating pattern of {motif}, {analog_medium}, {layout}, {color_palette
 
 ---
 
-**예시 1 — 🌿 수채화 들꽃 그리드 — 스타일 A**
+**예시 1 — 🌸 수채화 들꽃 정방형 그리드 — 스타일 A**
 
 ```
-Seamless repeating pattern of small wildflowers and tiny leaves, loose watercolor painting with soft bleeding edges and visible pigment pooling, evenly spaced grid layout, each motif repeated at regular intervals, soft sage green and dusty pink, muted watercolor tones, on warm cream paper with subtle fiber texture, tileable surface design, evenly spaced repeat, no text. --ar 1:1 --s 300 --tile
-```
-
----
-
-**예시 2 — 🍋 수채화 시트러스 하프드롭 — 스타일 A**
-
-```
-Seamless repeating pattern of tiny citrus fruits — lemons, oranges, and leaves, delicate watercolor wash with gentle granulation texture, half-drop repeat, motifs staggered in alternating rows, ochre yellow and olive green, vintage botanical palette, on aged off-white watercolor paper with slight grain, tileable surface design, evenly spaced repeat, no text. --ar 1:1 --s 350 --tile
+Seamless repeating pattern of a single small wildflower bloom, rendered in clean watercolor painting with soft pigment and gentle edges, arranged in a strict square grid, motifs aligned in perfectly straight rows and columns, identical spacing between every motif, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, soft sage green and dusty pink, muted watercolor tones, on warm cream paper with subtle fiber texture, flat top-down view, tileable surface design, no text, no variation in motif placement. --ar 1:1 --s 250 --tile
 ```
 
 ---
 
-**예시 3 — 🍄 수채화 버섯 스캐터 — 스타일 A**
+**예시 2 — 🍋 수채화 레몬 하프드롭 — 스타일 A**
 
 ```
-Seamless repeating pattern of scattered mushrooms and forest ferns, gouache painting with matte opaque finish and visible brushstrokes, scattered random-looking arrangement but seamlessly tileable, warm terracotta and cream, earthy watercolor palette, on ivory paper with faint vintage yellowing, tileable surface design, evenly spaced repeat, no text. --ar 1:1 --s 300 --tile
-```
-
----
-
-**예시 4 — 🌱 수채화 허브 여백형 — 스타일 A**
-
-```
-Seamless repeating pattern of vintage botanical herbs and dried stems, loose watercolor painting with soft bleeding edges and visible pigment pooling, loose airy arrangement with generous negative space between motifs, dusty lavender and mint, gentle pastel watercolor, on warm cream paper with subtle fiber texture, tileable surface design, evenly spaced repeat, no text. --ar 1:1 --s 400 --tile
+Seamless repeating pattern of a single lemon with one leaf, rendered in tidy watercolor wash with subtle granulation, crisp silhouette, arranged in a half-drop repeat, every other column shifted down by exactly half the motif height, rows perfectly aligned, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, ochre yellow and olive green, vintage botanical palette, on aged off-white watercolor paper with faint grain, flat top-down view, tileable surface design, no text, no variation in motif placement. --ar 1:1 --s 280 --tile
 ```
 
 ---
 
-**예시 5 — ⭐ 리노컷 별·달 다이아몬드 — 스타일 B**
+**예시 3 — 💜 수채화 라벤더 다이아몬드 격자 — 스타일 A**
 
 ```
-Seamless repeating pattern of hand-drawn stars and crescent moons, linocut block print with rough carved lines and ink texture, diamond grid layout with motifs on each lattice point, deep indigo ink on warm cream, on kraft paper with soft brown warmth, tileable surface design, evenly spaced repeat, no text. --ar 1:1 --s 200 --tile
-```
-
----
-
-**예시 6 — 🐦 판화 새·잔가지 그리드 — 스타일 B**
-
-```
-Seamless repeating pattern of tiny birds, twigs, and berries, woodblock print style with visible grain and slight misalignment, evenly spaced grid layout, each motif repeated at regular intervals, rust red and charcoal on ivory paper, on natural linen canvas texture background, tileable surface design, evenly spaced repeat, no text. --ar 1:1 --s 180 --tile
+Seamless repeating pattern of one sprig of lavender, rendered in gouache painting with matte opaque finish and clean brushstrokes, arranged in a diamond lattice, motifs placed on each intersection of a 45-degree grid, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, dusty lavender and mint, gentle pastel watercolor, on warm cream paper with subtle fiber texture, flat top-down view, tileable surface design, no text, no variation in motif placement. --ar 1:1 --s 250 --tile
 ```
 
 ---
 
-**예시 7 — ☕ 스탬프 커피 밀집 — 스타일 B**
+**예시 4 — 🍄 수채화 버섯 하프브릭 — 스타일 A**
 
 ```
-Seamless repeating pattern of coffee cups, beans, and croissants, hand-stamped potato print with uneven ink distribution, densely packed mosaic with motifs touching edges, burnt sienna and off-white, vintage print palette, on kraft paper with soft brown warmth, tileable surface design, evenly spaced repeat, no text. --ar 1:1 --s 220 --tile
+Seamless repeating pattern of one small mushroom, rendered in clean watercolor painting with soft pigment and gentle edges, arranged in a half-brick repeat, every other row shifted right by exactly half the motif width, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, warm terracotta and cream, earthy watercolor palette, on ivory paper with faint vintage yellowing, flat top-down view, tileable surface design, no text, no variation in motif placement. --ar 1:1 --s 250 --tile
 ```
 
 ---
 
-**예시 8 — ♦️ 판화 기하 하프드롭 — 스타일 B**
+**예시 5 — ⭐ 리노컷 별·달 교차 그리드 — 스타일 B**
 
 ```
-Seamless repeating pattern of simple geometric diamonds and dots, vintage rubber stamp print with faded ink edges, half-drop repeat, motifs staggered in alternating rows, forest green and black ink, limited two-tone palette, on aged off-white watercolor paper with slight grain, tileable surface design, evenly spaced repeat, no text. --ar 1:1 --s 200 --tile
+Seamless repeating pattern of one small star and one crescent moon alternating in strict ABAB order, rendered in linocut block print with crisp carved lines and even ink coverage, arranged in a strict square grid, motifs aligned in perfectly straight rows and columns, identical spacing between every motif, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, deep indigo ink on warm cream, on kraft paper with soft brown warmth, flat top-down view, tileable surface design, no text, no variation in motif placement. --ar 1:1 --s 150 --tile
+```
+
+---
+
+**예시 6 — ❄️ 판화 눈송이 헥사곤 — 스타일 B**
+
+```
+Seamless repeating pattern of a single snowflake, rendered in clean hand-stamped print with uniform ink, sharp edges, arranged in a hexagonal tessellation, motifs centered in each hexagon cell, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, forest green and black ink, limited two-tone palette, on natural linen canvas texture background, flat top-down view, tileable surface design, no text, no variation in motif placement. --ar 1:1 --s 150 --tile
+```
+
+---
+
+**예시 7 — ☕ 스탬프 커피콩 정방형 그리드 — 스타일 B**
+
+```
+Seamless repeating pattern of one coffee bean, rendered in vintage rubber stamp print with consistent pressure, arranged in a strict square grid, motifs aligned in perfectly straight rows and columns, identical spacing between every motif, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, burnt sienna and off-white, vintage print palette, on kraft paper with soft brown warmth, flat top-down view, tileable surface design, no text, no variation in motif placement. --ar 1:1 --s 180 --tile
+```
+
+---
+
+**예시 8 — ♦️ 판화 다이아몬드 오지 격자 — 스타일 B**
+
+```
+Seamless repeating pattern of a single simple diamond shape, rendered in woodblock print style with visible grain but clean impressions, arranged in an ogee lattice, motifs centered inside each interlocking oval cell, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, rust red and charcoal on ivory paper, on aged off-white watercolor paper with faint grain, flat top-down view, tileable surface design, no text, no variation in motif placement. --ar 1:1 --s 150 --tile
 ```
 
 ---
@@ -196,31 +197,31 @@ Seamless repeating pattern of simple geometric diamonds and dots, vintage rubber
 
 | **이걸 바꾸시면** | **효과** |
 | --- | --- |
-| `{motif}` 고정 + `{analog_medium}` 변경 | 같은 모티프, 매체별 시리즈 (수채/판화/색연필) |
-| `{analog_medium}` 고정 + `{motif}` 변경 | 같은 질감의 보태니컬 컬렉션 |
-| `{layout}` 를 그리드 → 스캐터 | 정갈함 → 자연스러움 |
-| `--s 200 → 400` | 아날로그 번짐·질감이 더 극적으로 |
-| `--tile` 제거 | seamless 실패 (일러스트 한 장이 됨) |
-| `{background}` 를 `kraft paper` 로 | 빈티지·공예 느낌 극대화 |
+| `{motif}` 고정 + `{layout}` 변경 | 같은 꽃으로 그리드/하프드롭/다이아 시리즈 |
+| `{layout}` 고정 + `{motif}` 변경 | 같은 격자 구조의 모티프 컬렉션 |
+| `{analog_medium}` 스타일 A → B | 수채 → 판화 전환, 같은 격자 유지 |
+| `--s` 값 낮춤 | 모티프 단순화, 규칙성 선명 |
+| `--tile` 제거 | seamless 실패 (절대 금지) |
+| `--chaos 5` 이상 | **규칙성 붕괴** — 이 가이드 취지 이탈 |
 
 ---
 
 **⚠️ 핵심 팁 5가지**
 
-1. **`--tile` 은 절대 빼지 마세요.** 이게 없으면 상하좌우 이음매가 어긋나서 패턴으로 못 써요.
-2. **모티프는 작고 단순할수록 반복이 예뻐요.** 복잡한 꽃 한 송이보다 작은 꽃 여러 개가 훨씬 잘 이어져요.
-3. **색은 2~4가지로 제한하세요.** 색이 많으면 반복 시 산만하고 인쇄 비용도 올라가요.
-4. **수채화는 `--s 300+`, 판화는 `--s 200-`.** A는 번짐이 살아야 하고 B는 선이 깔끔해야 해요.
-5. **출력 후 반드시 연결 테스트하세요.** 포토샵에서 2x2 로 이어붙여보거나 [pattern.monster](http://pattern.monster) 에 올려 경계선 확인이 필수예요.
+1. **"규칙성 키워드"를 반드시 박으세요.** `strict grid`, `mathematically precise`, `identical in size shape and orientation`, `no variation in motif placement` — 이 문구들이 위치·크기 일관성을 붙잡아줘요.
+2. **모티프는 1~2종만.** 3종 이상이면 격자가 무너져요. 꼭 여러 종을 쓰려면 `alternating in strict ABAB order` 로 교차 규칙을 명시.
+3. **매체 설명에 "uneven / slight misalignment" 금지.** 질감 설명에 이런 단어가 들어가면 위치까지 흐트러져요.
+4. **`--chaos` 는 0 고정.** 기본값을 건드리지 마세요. 올리는 순간 랜덤 배치로 바뀝니다.
+5. **반드시 2x2 타일 테스트.** 출력 이미지를 포토샵 「패턴으로 정의」 → 큰 캔버스에 적용해서 이음매·크기 차이·위치 어긋남이 있는지 확인하세요. 한 번에 성공하기 어려워요 — 4~8회 재생성 각오.
 
 ---
 
 **✅ 시리즈 만드는 추천 흐름**
 
-1. 한 가지 **매체(수채화 or 판화)** 를 정하세요.
-2. 같은 매체·같은 컬러 팔레트로 **모티프만 바꿔서 4~6종** 만드세요.
-3. 마음에 드는 컷에서 `--seed [번호]` 를 고정해 질감 일관성을 유지하세요.
-4. 계절별 컬렉션 (봄 들꽃 / 여름 시트러스 / 가을 버섯 / 겨울 별·달) 으로 묶어 판매하세요.
+1. 한 가지 **매체(수채화 or 판화)** 와 **격자 구조(그리드/하프드롭 등)** 를 정하세요.
+2. 같은 매체·같은 격자로 **모티프만 바꿔서 4~6종** 만드세요.
+3. 마음에 드는 컷에서 `--seed [번호]` 를 고정해 질감·격자 일관성을 유지하세요.
+4. 컬러는 시리즈 내에서 2~3색 팔레트 하나로 통일하세요.
 
-> 💡 **상시판매형 추천 조합.** ① 수채 보태니컬 4계절 세트 — 포장지·노트 커버 스테디셀러. ② 리노컷 빈티지 2~3색 시리즈 — 크래프트 패키지·브랜드 배경. ③ 스탬프 키친 모티프 (커피·빵·과일) — 카페·베이커리 굿즈.
+> 💡 **상시판매형 추천 조합.** ① 수채 보태니컬 정방형 4계절 세트 — 포장지·노트 커버 스테디셀러. ② 리노컷 2색 하프드롭 컬렉션 — 크래프트 패키지·벽지. ③ 단일 기하 모티프 (다이아·별·눈송이) 다이아몬드 격자 — 타일·원단 surface.
 >
