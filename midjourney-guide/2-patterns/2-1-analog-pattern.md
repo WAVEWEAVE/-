@@ -1,6 +1,6 @@
 # 2-1) 아날로그 패턴 — 정형화된 기하 타일
 
-> **정형화된 기하 모티프를 타일처럼 규칙적으로 반복**시키는 seamless 패턴 프롬프트입니다. 점·X 스테이셔너리, 3색 8포인트 스타 벽지, 쿼트리폴 바닥타일, 플랫 헥사곤 허니콤 — 4가지 검증된 스타일을 제공합니다. 명함·청첩장·벽지·원단·세라믹 타일에 바로 쓸 수 있어요.
+> **정형화된 기하 모티프를 타일처럼 규칙적으로 반복**시키는 seamless 패턴 프롬프트입니다. 점·X 스테이셔너리, 3색 8포인트 스타 벽지, 쿼트리폴 바닥타일, 도트 아웃라인 라티스 — 4가지 검증된 스타일을 제공합니다. 명함·청첩장·벽지·원단·세라믹 타일에 바로 쓸 수 있어요.
 
 ---
 
@@ -24,7 +24,7 @@
 
 ## 🚀 빠른 시작
 
-1. 아래 **스타일 A (스테이셔너리)** · **B (스타 벽지)** · **C (바닥타일)** · **D (헥사곤 허니콤)** 중 하나를 고르세요.
+1. 아래 **스타일 A (스테이셔너리)** · **B (스타 벽지)** · **C (바닥타일)** · **D (도트 아웃라인 라티스)** 중 하나를 고르세요.
 2. 원하는 예시를 고르세요. (스타일당 2개, 총 8개)
 3. **"완성 프롬프트"** 를 통째로 복사하세요.
 4. [alpha.midjourney.com](https://alpha.midjourney.com/) 에 붙여넣고 Enter.
@@ -41,10 +41,10 @@ Seamless repeating pattern of {motif}, {art_style}, arranged as a {grid_count} {
 
 ## ⚙️ 옵션 파라미터
 
-| **파라미터** | **스타일 A·C** | **스타일 B·D** | **메모** |
+| **파라미터** | **스타일 A·D** | **스타일 B·C** | **메모** |
 | --- | --- | --- | --- |
 | `--ar` | `1:1` | `1:1` | 타일은 정사각형 필수 |
-| `--s` | `120`~`180` | `180`~`220` | A·C 얕게 / B·D 풍부하게 |
+| `--s` | `120`~`150` | `180`~`220` | A·D 얕게(라인) / B·C 풍부하게(면) |
 | `--tile` | **필수** | **필수** | 빼면 seamless 안 됨 |
 | `--chaos` | `0` (기본 유지) | `0` (기본 유지) | 올리면 규칙성 붕괴 |
 
@@ -76,12 +76,12 @@ Seamless repeating pattern of {motif}, {art_style}, arranged as a {grid_count} {
 - `a single bold 6-petal rosette flower`
 - `a single bold four-leaf clover shape`
 
-**스타일 D — 플랫 헥사곤 허니콤:**
+**스타일 D — 도트 아웃라인 라티스:**
 
-- `a single flat solid hexagon`
-- `a single flat hexagon with a small filled dot at the center`
-- `a single flat hexagon with a smaller concentric hexagon inside in a lighter tone`
-- `a single flat hexagon with a small 6-point star inside`
+- `a single hexagon outline drawn with tiny evenly-spaced dots forming dashed edges, with a small solid filled dot at every vertex`
+- `a single flat isometric cube lattice cell drawn with tiny evenly-spaced dots forming dashed edges, no face fill no shading, with a small solid filled dot at every vertex and Y-junction`
+- `a single diamond rhombus outline drawn with tiny evenly-spaced dots forming dashed edges, with a small solid filled dot at every vertex`
+- `a single triangle outline drawn with tiny evenly-spaced dots forming dashed edges, with a small solid filled dot at every vertex`
 
 > 💡 **모티프 1종 원칙.** 점·X ABAB 교차만 예외. 그 외엔 단일 모티프 반복이 정석이에요.
 >
@@ -106,18 +106,18 @@ rendered as a flat solid color silhouette with a slightly darker inner layer for
 rendered as a solid flat color silhouette with crisp vector edges, no outline, mid-century bistro floor tile aesthetic
 ```
 
-**스타일 D — 🔷 플랫 헥사곤 허니콤** (평면 벌집 타일 계열)
+**스타일 D — ⬡ 도트 아웃라인 라티스** (도트·대시 외곽선 + 정점 도트 계열)
 
 ```
-rendered as a flat solid color silhouette with crisp vector edges, no outline, motifs rotating through three colors in strict ABCABC order, classic honeycomb tile aesthetic
+rendered as outline-only shapes drawn with tiny evenly-spaced dots forming dashed line edges, small solid filled dot at every vertex intersection, no fill inside shapes, clean single-accent color on light background, delicate stationery geometric feel
 ```
 
 > 💡 **스타일 선택 기준**
 >
-> |  | **A 스테이셔너리** | **B 스타 벽지** | **C 바닥타일** | **D 헥사곤 허니콤** |
+> |  | **A 스테이셔너리** | **B 스타 벽지** | **C 바닥타일** | **D 도트 아웃라인 라티스** |
 > | --- | --- | --- | --- | --- |
-> | 무드 | 미니멀 · 클래식 | 빈티지 · 귀여움 | 미드센추리 · 그래픽 | 모던 · 그래픽 |
-> | 어울리는 상품 | 명함·청첩장 | 벽지·쿠션 | 타일·에코백 | 벽지·박스·웹 배경 |
+> | 무드 | 미니멀 · 클래식 | 빈티지 · 귀여움 | 미드센추리 · 그래픽 | 스테이셔너리 · 모던 |
+> | 어울리는 상품 | 명함·청첩장 | 벽지·쿠션 | 타일·에코백 | 명함·노트·포장지·벽지 |
 > | 모티프 크기 | 아주 작게 | 큼직 | 중간 | 중간·큼직 |
 
 ### 3. `{color_palette}` — 색감은? (전부 밝은 톤만)
@@ -145,13 +145,14 @@ rendered as a flat solid color silhouette with crisp vector edges, no outline, m
 - `coral motifs on powder blue background`
 - `lavender motifs on warm ivory background`
 
-**스타일 D** — ABCABC 3색 로테이션 허니콤:
+**스타일 D** — 싱글 악센트 컬러 (도트+대시 아웃라인용, 듀오톤):
 
-- `rotating through three colors in strict ABCABC order (butter cream, peach, and coral pink), on warm cream background`
-- `rotating through three colors in strict ABCABC order (mint, soft sage, and powder blue), on ivory background`
-- `rotating through three colors in strict ABCABC order (lavender, dusty pink, and butter yellow), on cream background`
-- `rotating through three colors in strict ABCABC order (ivory, powder blue, and dusty lilac), on warm cream background`
-- `rotating through three colors in strict ABCABC order (soft sage, cream, and coral), on ivory background`
+- `warm mustard gold dotted outlines and vertex dots on warm cream background`
+- `dusty pink dotted outlines and vertex dots on ivory background`
+- `soft sage green dotted outlines and vertex dots on warm cream background`
+- `powder blue dotted outlines and vertex dots on soft bone white background`
+- `coral dotted outlines and vertex dots on warm cream background`
+- `lavender dotted outlines and vertex dots on ivory background`
 
 > 💡 **"pastel" 막연한 표현 피하세요.** `dusty pink`, `butter yellow`, `soft sage` 처럼 **구체적인 색 이름** 이 훨씬 또렷하게 나와요.
 >
@@ -162,10 +163,10 @@ rendered as a flat solid color silhouette with crisp vector edges, no outline, m
 
 | **카운트** | **프롬프트 표현** | **인상** | **추천 스타일** |
 | --- | --- | --- | --- |
-| **3 × 3** | `a large 3 by 3 grid` | 큼직·그래픽 | B, D |
+| **3 × 3** | `a large 3 by 3 grid` | 큼직·그래픽 | B |
 | **4 × 4** | `a clear 4 by 4 grid` | 밸런스 | B, C, D |
-| **5 × 5** | `a clear 5 by 5 grid` | 타일·원단 | C |
-| **6 × 6** | `a precise 6 by 6 grid` | 세밀 | A |
+| **5 × 5** | `a clear 5 by 5 grid` | 타일·원단 | C, D |
+| **6 × 6** | `a precise 6 by 6 grid` | 세밀 | A, D |
 
 > ⚠️ **7×7 이상 금지.** 규칙성이 무너져요.
 >
@@ -176,9 +177,12 @@ rendered as a flat solid color silhouette with crisp vector edges, no outline, m
 - `half-drop repeat, every other column shifted down by exactly half the motif height` *(스타일 B 기본)*
 - `half-brick repeat, every other row shifted right by exactly half the motif width` *(스타일 B 변주)*
 - `strict square grid with motifs touching at corners` *(스타일 C 전용)*
-- `honeycomb tessellation, every row shifted by half the hexagon width, hexagons edge-to-edge with no gaps` *(스타일 D 전용)*
+- `flat hexagonal honeycomb lattice, hexagons edge-to-edge sharing dotted edges, vertex dots at every shared corner` *(스타일 D — 헥사곤)*
+- `isometric cube lattice drawn flat with no face shading, three dashed edges meeting at every Y-junction vertex with a solid dot marker` *(스타일 D — 아이소 라티스)*
+- `diamond grid lattice, rhombus cells edge-to-edge sharing dotted edges, vertex dots at every shared corner` *(스타일 D — 다이아 그리드)*
+- `triangular tessellation, triangles edge-to-edge sharing dotted edges, vertex dots at every shared corner` *(스타일 D — 트라이앵글)*
 
-> 💡 **스타일 × 레이아웃 궁합은 위 표기대로.** A엔 다이아, B엔 하프드롭/하프브릭, C엔 엣지터치 그리드, D엔 허니콤 테셀 — 벗어나면 해당 스타일의 느낌이 깨져요.
+> 💡 **스타일 × 레이아웃 궁합은 위 표기대로.** A엔 다이아, B엔 하프드롭/하프브릭, C엔 엣지터치 그리드, D엔 라티스(헥사곤/아이소/다이아/트라이앵글) — 벗어나면 해당 스타일의 느낌이 깨져요.
 >
 
 ---
@@ -235,18 +239,18 @@ Seamless repeating pattern of a single bold 6-petal rosette flower, rendered as 
 
 ---
 
-### 예시 7 — 🔷 플랫 헥사곤 허니콤 (핑크·피치·코랄) — 스타일 D
+### 예시 7 — ⬡ 아이소 라티스 도트 아웃라인 (머스터드 골드 on 크림) — 스타일 D
 
 ```
-Seamless repeating pattern of a single flat solid hexagon, rendered as a flat solid color silhouette with crisp vector edges, no outline, motifs rotating through three colors in strict ABCABC order, classic honeycomb tile aesthetic, arranged as a clear 4 by 4 grid honeycomb tessellation, every row shifted by half the hexagon width, hexagons edge-to-edge with no gaps, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, rotating through three colors in strict ABCABC order (butter cream, peach, and coral pink), on warm cream background, flat top-down view, bright classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 200 --tile
+Seamless repeating pattern of a single flat isometric cube lattice cell drawn with tiny evenly-spaced dots forming dashed edges, no face fill no shading, with a small solid filled dot at every vertex and Y-junction, rendered as outline-only shapes drawn with tiny evenly-spaced dots forming dashed line edges, small solid filled dot at every vertex intersection, no fill inside shapes, clean single-accent color on light background, delicate stationery geometric feel, arranged as a clear 4 by 4 grid isometric cube lattice drawn flat with no face shading, three dashed edges meeting at every Y-junction vertex with a solid dot marker, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, warm mustard gold dotted outlines and vertex dots on warm cream background, flat top-down view, bright classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 140 --tile
 ```
 
 ---
 
-### 예시 8 — 🔷 센터 도트 헥사곤 허니콤 (민트·세이지·블루) — 스타일 D
+### 예시 8 — ⬡ 헥사곤 허니콤 도트 아웃라인 (세이지 on 크림) — 스타일 D
 
 ```
-Seamless repeating pattern of a single flat hexagon with a small filled dot at the center, rendered as a flat solid color silhouette with crisp vector edges, no outline, motifs rotating through three colors in strict ABCABC order, classic honeycomb tile aesthetic, arranged as a clear 5 by 5 grid honeycomb tessellation, every row shifted by half the hexagon width, hexagons edge-to-edge with no gaps, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, rotating through three colors in strict ABCABC order (mint, soft sage, and powder blue), on ivory background, flat top-down view, bright classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 200 --tile
+Seamless repeating pattern of a single hexagon outline drawn with tiny evenly-spaced dots forming dashed edges, with a small solid filled dot at every vertex, rendered as outline-only shapes drawn with tiny evenly-spaced dots forming dashed line edges, small solid filled dot at every vertex intersection, no fill inside shapes, clean single-accent color on light background, delicate stationery geometric feel, arranged as a clear 5 by 5 grid flat hexagonal honeycomb lattice, hexagons edge-to-edge sharing dotted edges, vertex dots at every shared corner, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, soft sage green dotted outlines and vertex dots on warm cream background, flat top-down view, bright classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 140 --tile
 ```
 
 ---
@@ -268,7 +272,7 @@ Seamless repeating pattern of a single flat hexagon with a small filled dot at t
 
 ## ⚠️ 핵심 팁 5가지
 
-1. **스타일·모티프·레이아웃 궁합을 지키세요.** A→다이아·마크 / B→하프드롭·스타 / C→엣지터치·로제트 / D→허니콤·헥사곤. 섞으면 스타일의 정체성이 깨져요.
+1. **스타일·모티프·레이아웃 궁합을 지키세요.** A→다이아·마크 / B→하프드롭·스타 / C→엣지터치·로제트 / D→도트 아웃라인 라티스(헥사곤·아이소·다이아·트라이앵글). 섞으면 스타일의 정체성이 깨져요.
 2. **그리드 카운트는 숫자로 박으세요.** `a 3 by 3 / a 4 by 4 / a 5 by 5`. 모호한 "small motif" 대신 개수 지정이 규칙성을 유지해줘요.
 3. **색은 전부 밝은 톤.** 구체적인 색 이름으로 (`dusty pink`, `butter yellow`, `soft mint`). "pastel" 같은 막연한 단어는 피하세요.
 4. **규칙성 키워드 필수.** `strict`, `mathematically precise repeat`, `identical in size shape and orientation`, `no variation in motif placement` — 하나라도 빠지면 흐트러져요.
@@ -283,5 +287,5 @@ Seamless repeating pattern of a single flat hexagon with a small filled dot at t
 3. 첫 결과의 `--seed` 를 다음에 붙여 비례·톤 일관성 유지.
 4. `--sref [첫 결과 URL]` 추가하면 완벽한 패턴 컬렉션.
 
-> 💡 **상시판매형 추천 조합.** ① 스타일 A 스테이셔너리 4색 (세이지·핑크·블루·옐로우) — 명함·청첩장. ② 스타일 B 3색 로테이션 4계절 (봄·여름·가을·겨울 팔레트) — 벽지 컬렉션. ③ 스타일 C 쿼트리폴·로제트·클로버 3종 듀오톤 — 카페 타일. ④ 스타일 D 헥사곤 허니콤 ABCABC 4팔레트 — 모던 벽지·박스.
+> 💡 **상시판매형 추천 조합.** ① 스타일 A 스테이셔너리 4색 (세이지·핑크·블루·옐로우) — 명함·청첩장. ② 스타일 B 3색 로테이션 4계절 (봄·여름·가을·겨울 팔레트) — 벽지 컬렉션. ③ 스타일 C 쿼트리폴·로제트·클로버 3종 듀오톤 — 카페 타일. ④ 스타일 D 도트 아웃라인 라티스 4라티스(헥사곤·아이소·다이아·트라이앵글) × 머스터드 골드 — 모던 스테이셔너리 세트.
 >
