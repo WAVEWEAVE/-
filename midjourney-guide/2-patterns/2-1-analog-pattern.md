@@ -207,7 +207,15 @@ Seamless repeating pattern of a tiny dot and a small X alternating in strict ABA
 
 ---
 
-### 예시 3 — ✦ 8포인트 스타 3색 벽지 (핑크·옐로우·블루) — 스타일 B
+### 예시 3 — 📐 플러스 크로스 스테이셔너리 (버터 옐로우) — 스타일 A
+
+```
+Seamless repeating pattern of a single small plus sign cross, rendered in ultra-thin crisp hairline strokes with faint dashed connecting lines between motifs, classic stationery engraving feel, arranged as a precise 6 by 6 grid diagonal diamond lattice, rows rotated 45 degrees, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, butter yellow marks on warm cream background, flat top-down view, bright classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 120 --tile
+```
+
+---
+
+### 예시 4 — ✦ 8포인트 스타 3색 벽지 (핑크·옐로우·블루) — 스타일 B
 
 ```
 Seamless repeating pattern of a single bold 8-point compass star formed by two overlapping 4-point stars rotated 45 degrees with a tiny center dot, rendered as a flat solid color silhouette with a slightly darker inner layer for depth, motifs rotating through three colors in strict ABCABC order, vintage wallpaper aesthetic, arranged as a clear 4 by 4 grid half-drop repeat, every other column shifted down by exactly half the motif height, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, rotating through three colors in strict ABCABC order (dusty pink, butter yellow, and powder blue), on soft sage cream background, flat top-down view, bright classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 200 --tile
@@ -215,7 +223,7 @@ Seamless repeating pattern of a single bold 8-point compass star formed by two o
 
 ---
 
-### 예시 4 — ✦ 6포인트 스타 3색 벽지 (라벤더·피치·민트) — 스타일 B
+### 예시 5 — ✦ 6포인트 스타 3색 벽지 (라벤더·피치·민트) — 스타일 B
 
 ```
 Seamless repeating pattern of a single bold 6-point star with a tiny center dot, rendered as a flat solid color silhouette with a slightly darker inner layer for depth, motifs rotating through three colors in strict ABCABC order, vintage wallpaper aesthetic, arranged as a clear 4 by 4 grid half-drop repeat, every other column shifted down by exactly half the motif height, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, rotating through three colors in strict ABCABC order (lavender, peach, and mint), on ivory background, flat top-down view, bright classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 200 --tile
@@ -223,7 +231,7 @@ Seamless repeating pattern of a single bold 6-point star with a tiny center dot,
 
 ---
 
-### 예시 5 — ✿ 쿼트리폴 바닥타일 (크림 on 민트) — 스타일 C
+### 예시 6 — ✿ 쿼트리폴 바닥타일 (크림 on 민트) — 스타일 C
 
 ```
 Seamless repeating pattern of a single bold quatrefoil formed by four curved pointed petals radiating outward like a pinwheel, rendered as a solid flat color silhouette with crisp vector edges, no outline, mid-century bistro floor tile aesthetic, arranged as a clear 5 by 5 grid strict square grid with motifs touching at corners, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, warm cream motifs on soft mint background, flat top-down view, bright classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 180 --tile
@@ -231,7 +239,7 @@ Seamless repeating pattern of a single bold quatrefoil formed by four curved poi
 
 ---
 
-### 예시 6 — ✿ 6-Petal 로제트 타일 (코랄 on 파우더 블루) — 스타일 C
+### 예시 7 — ✿ 6-Petal 로제트 타일 (코랄 on 파우더 블루) — 스타일 C
 
 ```
 Seamless repeating pattern of a single bold 6-petal rosette flower, rendered as a solid flat color silhouette with crisp vector edges, no outline, mid-century bistro floor tile aesthetic, arranged as a clear 5 by 5 grid strict square grid with motifs touching at corners, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, coral motifs on powder blue background, flat top-down view, bright classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 180 --tile
@@ -239,18 +247,10 @@ Seamless repeating pattern of a single bold 6-petal rosette flower, rendered as 
 
 ---
 
-### 예시 7 — ⬡ 아이소 라티스 도트 아웃라인 (머스터드 골드 on 크림) — 스타일 D
+### 예시 8 — ⬡ 아이소 라티스 도트 아웃라인 (머스터드 골드 on 크림) — 스타일 D
 
 ```
 Seamless repeating pattern of a single flat isometric cube lattice cell drawn with tiny evenly-spaced dots forming dashed edges, no face fill no shading, with a small solid filled dot at every vertex and Y-junction, rendered as outline-only shapes drawn with tiny evenly-spaced dots forming dashed line edges, small solid filled dot at every vertex intersection, no fill inside shapes, clean single-accent color on light background, delicate stationery geometric feel, arranged as a clear 4 by 4 grid isometric cube lattice drawn flat with no face shading, three dashed edges meeting at every Y-junction vertex with a solid dot marker, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, warm mustard gold dotted outlines and vertex dots on warm cream background, flat top-down view, bright classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 140 --tile
-```
-
----
-
-### 예시 8 — ⬡ 헥사곤 허니콤 도트 아웃라인 (세이지 on 크림) — 스타일 D
-
-```
-Seamless repeating pattern of a single hexagon outline drawn with tiny evenly-spaced dots forming dashed edges, with a small solid filled dot at every vertex, rendered as outline-only shapes drawn with tiny evenly-spaced dots forming dashed line edges, small solid filled dot at every vertex intersection, no fill inside shapes, clean single-accent color on light background, delicate stationery geometric feel, arranged as a clear 5 by 5 grid flat hexagonal honeycomb lattice, hexagons edge-to-edge sharing dotted edges, vertex dots at every shared corner, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, soft sage green dotted outlines and vertex dots on warm cream background, flat top-down view, bright classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 140 --tile
 ```
 
 ---
