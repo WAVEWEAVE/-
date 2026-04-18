@@ -1,33 +1,33 @@
-# 2-1) 아날로그 패턴 — 정형화된 기하학 반복 (Strict Geometric Seamless)
+# 2-1) 아날로그 패턴 — 정형화된 기하학 반복 (Simple & Sparse Seamless)
 
-> **수학적으로 정형화된 기하학 모티프**를 다양한 렌더링(모노라인 / 플랫 블록 / 스티플 그레인 / 스트라이프 필 / 솔리드 실루엣)으로 표현하고, 엄격한 격자 구조로 반복시키는 seamless 패턴 프롬프트입니다. 스테이셔너리·벽지·원단·럭셔리 패키지·타일까지 모두 커버합니다.
+> **단순한 기하 모티프 하나**를 **여백 넉넉한 격자** 위에서 엄격하게 반복시키는 seamless 패턴 프롬프트입니다. 미드저니의 약점(촘촘·복잡한 모티프에서 규칙성 무너짐)을 피하도록 **모티프는 단순**, **배치는 듬성듬성**하게 설계했어요. 스테이셔너리·벽지·럭셔리 패키지·타일에 바로 쓸 수 있어요.
 
 ---
 
 **📌 이 프롬프트는 어떤 용도인가요?**
 
-정형화된 기하 모티프를 **위치·크기·방향이 한 치도 흐트러지지 않는 타일**로 만드는 프롬프트예요. 렌더링 방식만 바꾸면 같은 기하 구조로 완전히 다른 분위기(미니멀 스테이셔너리·미드센추리 블록·빈티지 에칭·아트데코 라인)가 나와요.
+단순 기하 모티프를 **위치·크기·방향이 흐트러지지 않는 타일**로 만들되, **모티프 간 여백을 충분히** 두어 미드저니가 규칙성을 지킬 수 있게 한 프롬프트예요.
 
 이런 데 쓸 수 있어요:
 
 - 명함·레터헤드·청첩장 배경
-- 럭셔리 브랜드 박스·쇼핑백·쇼룸 배경
+- 럭셔리 브랜드 박스·쇼핑백
 - Spoonflower / Redbubble 원단·벽지
-- 바닥재·세라믹 타일 surface
-- 호텔·리빙 벽지·쿠션
+- 바닥재·세라믹 타일
+- 호텔·리빙 벽지
 - 목업 / 웹 히어로 배경
 
-> ⚠️ **"정형화된 기하학" 이 이 가이드의 테마예요.** 모티프는 기하 도형(원·삼각·사각·육각·아치·물결·스캘럽 등), 배치는 엄격한 격자, 렌더링은 5종 중 선택. 수채·과슈 같은 회화 매체는 범위 밖이에요.
+> ⚠️ **단순함이 성공의 열쇠예요.** 미드저니는 복잡한 모티프·촘촘한 배치에서 반드시 규칙이 무너져요. 이 가이드의 모든 옵션은 **"작고 단순한 모티프 + 여백 넉넉한 배치"** 원칙을 지켜요. 모티프를 복잡하게 꾸미거나 빽빽하게 붙이면 실패해요.
 >
 
 ---
 
 **🚀 빠른 시작**
 
-1. 아래 5가지 렌더링 중 하나를 선택.
-2. 6가지 모티프 계열 중 하나를 선택.
-3. 8가지 정형 격자 중 하나를 선택.
-4. 컬러·배경을 골라 완성 프롬프트를 만드세요.
+1. 아래 4가지 렌더링 중 하나 선택.
+2. 12가지 단순 모티프 중 하나 선택.
+3. 5가지 여유 있는 격자 중 하나 선택.
+4. 컬러·배경을 골라 프롬프트 완성.
 5. [alpha.midjourney.com](https://alpha.midjourney.com/) 에 붙여넣고 Enter.
 
 ---
@@ -35,8 +35,11 @@
 **📐 마스터 프롬프트 본문**
 
 ```
-Seamless repeating pattern of {motif}, {rendering}, arranged in {layout}, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, {color_palette}, on {background}, flat top-down view, clean classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 200 --tile
+Seamless repeating pattern of {motif}, {rendering}, arranged in {layout}, small motif with generous uniform spacing and lots of negative space between motifs, every motif identical in size shape and orientation, mathematically precise repeat, {color_palette}, on {background}, flat top-down view, minimalist airy composition, tileable, no text, no variation in motif placement. --ar 1:1 --s 180 --tile
 ```
+
+> 💡 **`small motif with generous uniform spacing` 문구가 이 가이드의 핵심이에요.** 이 한 줄이 미드저니의 "빽빽하게 채우려는 습성" 을 막아줘요.
+>
 
 ---
 
@@ -45,7 +48,7 @@ Seamless repeating pattern of {motif}, {rendering}, arranged in {layout}, every 
 | **파라미터** | **권장값** | **메모** |
 | --- | --- | --- |
 | `--ar` | `1:1` | 타일은 반드시 정사각형 |
-| `--s` | `100`~`350` | 모노라인 낮게 / 스티플 높게 |
+| `--s` | `100`~`300` | 모노라인 낮게 / 스티플 높게 |
 | `--tile` | **필수** | 빼면 seamless 안 됨 |
 | `--chaos` | `0` (기본) | **절대 올리지 말 것** |
 | `--niji 6` | 비추천 | 고전 톤이 일러스트화됨 |
@@ -54,65 +57,38 @@ Seamless repeating pattern of {motif}, {rendering}, arranged in {layout}, every 
 
 **📌 변수 5개 — 모두 필수**
 
-**1. `{motif}` — 기하 모티프 (6 계열 × 20+ 옵션)**
+**1. `{motif}` — 단순 기하 모티프 (4 계열 × 12 옵션)**
 
-**A. 점·마크 (Micro marks):**
+**A. 점·마크 (극도로 단순):**
 
 - `a single tiny filled dot`
 - `a single small X mark`
 - `a single small plus sign cross`
-- `a single tiny asterisk star`
 - `a tiny dot and a small X alternating in strict ABAB order`
 
-**B. 폴리곤 (Polygons):**
+**B. 단순 폴리곤:**
 
-- `a single solid equilateral triangle`
-- `a single solid square`
-- `a single solid diamond (rotated square)`
-- `a single regular hexagon`
-- `a single regular octagon`
-- `a single solid pentagon`
+- `a single small solid triangle`
+- `a single small solid square`
+- `a single small solid diamond`
+- `a single small hexagon outline`
 
-**C. 곡선·아치 (Curves & arcs):**
+**C. 단순 곡선:**
 
-- `a single semicircle`
-- `a single quarter-circle arc filling a square cell`
-- `a single full circle ring`
-- `a single horizontal oval`
-- `a single vertical capsule stadium shape`
-- `a single set of three nested concentric arches forming a capsule`
-- `a single seigaiha wave scale with three concentric arcs`
-- `a single scallop shape`
+- `a single small filled circle`
+- `a single small semicircle`
+- `a single small vertical capsule shape`
 
-**D. 격자·장식 (Lattice & ornamental):**
+**D. 단순 장식 (선택):**
 
-- `a single quatrefoil four-petal rosette`
-- `a single trefoil three-petal shape`
-- `a single chevron zigzag stripe`
-- `a single L-shaped bracket corner`
-- `a single simplified fleur-de-lis`
-- `a single small eight-point compass star`
+- `a single small quatrefoil four-petal shape`
 
-**E. 라인 기반 (Line-based motifs):**
-
-- `a single set of four nested concentric squares`
-- `a single set of nested concentric circles`
-- `a single bundle of parallel stripes filling a square cell`
-- `a single crosshatched square with diagonal hatching`
-- `a single hexagon filled with parallel vertical stripes`
-
-**F. 테셀레이팅 (Edge-to-edge tessellations):**
-
-- `a single herringbone parallelogram tile`
-- `a single basketweave rectangle tile`
-- `a single pinwheel of four right triangles`
-- `a single isometric cube with three visible faces`
-- `a single Truchet quarter-circle tile`
-
-> 💡 **모티프 1종 원칙.** 격자를 지키려면 단일 모티프 반복이 정석. 점·X 같은 초소형만 예외적으로 ABAB 교차 허용. 3종 이상은 격자 붕괴.
+> ⚠️ **여기 있는 12개만 쓰세요.** 세이가이하·테셀레이션·중첩 라인·스트라이프 필 육각 같은 복잡한 모티프는 미드저니가 격자를 못 지켜요. 더 다양한 결과를 원하면 **모티프는 고정하고 렌더링·컬러·배치를 바꾸세요.**
+>
+> 💡 **모티프 1종 원칙.** 점·X ABAB 교차만 예외적으로 허용. 그 외엔 단일 모티프 반복.
 >
 
-**2. `{rendering}` — 렌더링 5종**
+**2. `{rendering}` — 렌더링 4종**
 
 **① 모노라인 (Monoline):**
 - `rendered in ultra-thin crisp hairline strokes, single uniform line weight, no fill`
@@ -123,42 +99,26 @@ Seamless repeating pattern of {motif}, {rendering}, arranged in {layout}, every 
 **③ 스티플 그레인 (Stipple grain):**
 - `rendered with dense pointillism stipple dot fill, halftone grain texture, vintage engraving feel`
 
-**④ 스트라이프 필 (Striped fill):**
-- `rendered as a shape filled with fine parallel stripe hatching inside its silhouette, crisp thin lines`
-
-**⑤ 아웃라인 + 대비 필 (Outline + fill):**
+**④ 아웃라인 + 대비 필 (Outline + fill):**
 - `rendered with medium-weight crisp outlines and a contrasting flat fill color inside`
 
-> 💡 **렌더링별 추천 모티프:**
->
-> - 모노라인 → 곡선·아치·격자·라인 계열 (C·D·E)
-> - 플랫 블록 → 폴리곤·쿼터아크 (B·C 일부)
-> - 스티플 → 캡슐·오벌·다이아·반원 (B·C 대형)
-> - 스트라이프 필 → 육각·사각·쿼터아크 (B·F)
-> - 아웃라인+필 → 테셀레이션·쿼트리폴 (F·D)
+> 💡 **스트라이프 필·크로스해치 같은 복잡한 내부 필은 뺐어요.** 미드저니가 내부 패턴까지 규칙적으로 그리질 못해요.
 >
 
-**3. `{layout}` — 정형 격자 8종**
+**3. `{layout}` — 여유 있는 정형 격자 5종**
 
-- `a strict square grid, motifs aligned in perfectly straight rows and columns, identical spacing`
-- `a diagonal diamond lattice, motifs at every 45-degree grid intersection`
-- `a half-drop repeat, every other column shifted down by exactly half the motif height`
-- `a half-brick repeat, every other row shifted right by exactly half the motif width`
-- `a hexagonal tessellation, motifs tessellating edge-to-edge in a honeycomb grid`
-- `a triangular lattice, motifs at each node of an equilateral triangle grid`
-- `a wave row repeat, motifs in perfectly parallel horizontal rows, each row identical`
-- `a scalloped offset repeat, motifs in offset rows with each scallop tangent to the next`
+**모두 "모티프가 서로 닿지 않는 듬성한 배치" 예요.**
 
-> 💡 **모티프별 레이아웃 추천:**
->
-> - 점·X·폴리곤 → 정방형 / 다이아몬드 / 하프드롭
-> - 아치·캡슐·스캘럽 → 스캘럽 오프셋 / 하프드롭
-> - 세이가이하 물결 → 물결 평행 반복
-> - 육각·테셀레이션 → 벌집·삼각 테셀레이션
-> - 쿼트리폴·콤파스 → 다이아몬드 격자
+- `a strict square grid with generous spacing, motifs in straight rows and columns with wide gaps` *(정방형 그리드 — 기본 추천)*
+- `a diagonal diamond lattice with wide spacing, motifs placed at every 45-degree grid intersection with room between them` *(대각선 다이아 — 스테이셔너리 클래식)*
+- `a half-drop repeat with generous spacing, every other column shifted down by exactly half the motif height` *(하프 드롭)*
+- `a half-brick repeat with generous spacing, every other row shifted right by exactly half the motif width` *(하프 브릭)*
+- `a triangular lattice with wide spacing, motifs at each node of an equilateral triangle grid` *(삼각 격자)*
+
+> ⚠️ **"edge-to-edge 테셀레이션"·"벌집 밀집"·"스캘럽 스택" 같은 빽빽한 배치는 뺐어요.** 미드저니가 이런 배치에서 모티프 크기를 일정하게 유지 못 해요.
 >
 
-**4. `{color_palette}` — 2~3색 듀오톤/트리톤**
+**4. `{color_palette}` — 2~3색 제한**
 
 **미니멀 스테이셔너리:**
 - `charcoal black on warm off-white`
@@ -168,28 +128,21 @@ Seamless repeating pattern of {motif}, {rendering}, arranged in {layout}, every 
 **럭셔리·아트데코:**
 - `metallic gold on deep navy`
 - `metallic gold on charcoal grey`
-- `gold outlines on dark emerald`
 
-**빈티지 판화·에칭:**
+**빈티지 판화 (스티플 전용):**
 - `warm cream stipple on deep navy`
-- `tan dotwork on black`
-- `ivory grain on midnight blue`
+- `ivory dotwork on midnight blue`
 
-**미드센추리·모던:**
-- `powder blue, cream, and slate, mid-century palette`
-- `terracotta, mustard, and warm cream, vintage palette`
-- `sage green and soft cream, muted mid-century palette`
-
-**오리엔탈·빈티지 벽지:**
-- `teal lines on warm cream`
-- `dusty blue motifs on muted grey`
+**미드센추리·벽지:**
+- `powder blue and cream, mid-century palette`
+- `terracotta and warm cream, vintage palette`
+- `sage green and soft cream, muted palette`
+- `dusty blue on muted grey, vintage wallpaper palette`
 
 **5. `{background}` — 배경 톤**
 
 - `deep navy background`
 - `charcoal grey background`
-- `midnight blue background`
-- `dark emerald background`
 - `warm cream paper`
 - `ivory cardstock`
 - `soft muted grey background`
@@ -197,70 +150,70 @@ Seamless repeating pattern of {motif}, {rendering}, arranged in {layout}, every 
 
 ---
 
-**✏️ 적용 예시 8개 — 렌더링·모티프·레이아웃 다양하게**
+**✏️ 적용 예시 8개 — 단순 모티프 × 다양한 렌더링·격자·컬러**
 
 ---
 
 **예시 1 — ✖️ 점·X 교차 × 모노라인 × 대각선 다이아몬드**
 
 ```
-Seamless repeating pattern of a tiny dot and a small X alternating in strict ABAB order, rendered in ultra-thin crisp hairline strokes, single uniform line weight, no fill, arranged in a diagonal diamond lattice, motifs at every 45-degree grid intersection, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, deep navy on cream ivory, on warm cream paper, flat top-down view, clean classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 120 --tile
+Seamless repeating pattern of a tiny dot and a small X alternating in strict ABAB order, rendered in ultra-thin crisp hairline strokes, single uniform line weight, no fill, arranged in a diagonal diamond lattice with wide spacing, motifs placed at every 45-degree grid intersection with room between them, small motif with generous uniform spacing and lots of negative space between motifs, every motif identical in size shape and orientation, mathematically precise repeat, deep navy on cream ivory, on warm cream paper, flat top-down view, minimalist airy composition, tileable, no text, no variation in motif placement. --ar 1:1 --s 120 --tile
 ```
 
 ---
 
-**예시 2 — 🔺 삼각형 × 플랫 컬러 블록 × 삼각 격자**
+**예시 2 — 🔺 삼각형 × 플랫 블록 × 삼각 격자**
 
 ```
-Seamless repeating pattern of a single solid equilateral triangle, rendered as a solid flat color silhouette with crisp vector edges, no outline, no texture, arranged in a triangular lattice, motifs at each node of an equilateral triangle grid, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, terracotta, mustard, and warm cream, vintage palette, on warm cream paper, flat top-down view, clean classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 180 --tile
-```
-
----
-
-**예시 3 — ◐ 쿼터아크 × 플랫 블록 × 정방형 그리드 (바우하우스)**
-
-```
-Seamless repeating pattern of a single quarter-circle arc filling a square cell, rendered as a solid flat color silhouette with crisp vector edges, no outline, no texture, arranged in a strict square grid, motifs aligned in perfectly straight rows and columns, identical spacing, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, powder blue, cream, and slate, mid-century palette, on ivory cardstock, flat top-down view, clean classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 200 --tile
+Seamless repeating pattern of a single small solid triangle, rendered as a solid flat color silhouette with crisp vector edges, no outline, no texture, arranged in a triangular lattice with wide spacing, motifs at each node of an equilateral triangle grid, small motif with generous uniform spacing and lots of negative space between motifs, every motif identical in size shape and orientation, mathematically precise repeat, terracotta and warm cream, vintage palette, on warm cream paper, flat top-down view, minimalist airy composition, tileable, no text, no variation in motif placement. --ar 1:1 --s 180 --tile
 ```
 
 ---
 
-**예시 4 — ⬡ 육각 × 스트라이프 필 × 벌집 테셀레이션 (아트데코)**
+**예시 3 — ◐ 반원 × 플랫 블록 × 정방형 그리드**
 
 ```
-Seamless repeating pattern of a single hexagon filled with parallel vertical stripes, rendered as a shape filled with fine parallel stripe hatching inside its silhouette, crisp thin lines, arranged in a hexagonal tessellation, motifs tessellating edge-to-edge in a honeycomb grid, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, metallic gold on charcoal grey, on charcoal grey background, flat top-down view, clean classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 180 --tile
-```
-
----
-
-**예시 5 — 🌊 세이가이하 × 모노라인 × 물결 평행 반복**
-
-```
-Seamless repeating pattern of a single seigaiha wave scale with three concentric arcs, rendered in ultra-thin crisp hairline strokes, single uniform line weight, no fill, arranged in a wave row repeat, motifs in perfectly parallel horizontal rows, each row identical, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, teal lines on warm cream, on warm cream paper, flat top-down view, clean classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 140 --tile
+Seamless repeating pattern of a single small semicircle, rendered as a solid flat color silhouette with crisp vector edges, no outline, no texture, arranged in a strict square grid with generous spacing, motifs in straight rows and columns with wide gaps, small motif with generous uniform spacing and lots of negative space between motifs, every motif identical in size shape and orientation, mathematically precise repeat, powder blue and cream, mid-century palette, on ivory cardstock, flat top-down view, minimalist airy composition, tileable, no text, no variation in motif placement. --ar 1:1 --s 200 --tile
 ```
 
 ---
 
-**예시 6 — ⬭ 캡슐 컬럼 × 스티플 그레인 × 하프드롭**
+**예시 4 — ⬡ 육각 아웃라인 × 모노라인 × 하프드롭**
 
 ```
-Seamless repeating pattern of a single vertical capsule stadium shape, rendered with dense pointillism stipple dot fill, halftone grain texture, vintage engraving feel, arranged in a half-drop repeat, every other column shifted down by exactly half the motif height, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, warm cream stipple on deep navy, on deep navy background, flat top-down view, clean classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 300 --tile
-```
-
----
-
-**예시 7 — ✦ 쿼트리폴 × 아웃라인 + 대비 필 × 다이아몬드 격자**
-
-```
-Seamless repeating pattern of a single quatrefoil four-petal rosette, rendered with medium-weight crisp outlines and a contrasting flat fill color inside, arranged in a diagonal diamond lattice, motifs at every 45-degree grid intersection, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, dusty blue motifs on muted grey, on soft muted grey background, flat top-down view, clean classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 180 --tile
+Seamless repeating pattern of a single small hexagon outline, rendered in ultra-thin crisp hairline strokes, single uniform line weight, no fill, arranged in a half-drop repeat with generous spacing, every other column shifted down by exactly half the motif height, small motif with generous uniform spacing and lots of negative space between motifs, every motif identical in size shape and orientation, mathematically precise repeat, metallic gold on charcoal grey, on charcoal grey background, flat top-down view, minimalist airy composition, tileable, no text, no variation in motif placement. --ar 1:1 --s 140 --tile
 ```
 
 ---
 
-**예시 8 — ▰ 헤링본 × 플랫 블록 × 하프브릭 (테셀레이션)**
+**예시 5 — ⬭ 캡슐 × 스티플 그레인 × 하프드롭**
 
 ```
-Seamless repeating pattern of a single herringbone parallelogram tile, rendered as a solid flat color silhouette with crisp vector edges, no outline, no texture, arranged in a half-brick repeat, every other row shifted right by exactly half the motif width, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, charcoal black on warm off-white, on off-white stationery paper, flat top-down view, clean classic surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 180 --tile
+Seamless repeating pattern of a single small vertical capsule shape, rendered with dense pointillism stipple dot fill, halftone grain texture, vintage engraving feel, arranged in a half-drop repeat with generous spacing, every other column shifted down by exactly half the motif height, small motif with generous uniform spacing and lots of negative space between motifs, every motif identical in size shape and orientation, mathematically precise repeat, warm cream stipple on deep navy, on deep navy background, flat top-down view, minimalist airy composition, tileable, no text, no variation in motif placement. --ar 1:1 --s 280 --tile
+```
+
+---
+
+**예시 6 — ✦ 쿼트리폴 × 아웃라인 + 필 × 대각선 다이아몬드**
+
+```
+Seamless repeating pattern of a single small quatrefoil four-petal shape, rendered with medium-weight crisp outlines and a contrasting flat fill color inside, arranged in a diagonal diamond lattice with wide spacing, motifs placed at every 45-degree grid intersection with room between them, small motif with generous uniform spacing and lots of negative space between motifs, every motif identical in size shape and orientation, mathematically precise repeat, dusty blue on muted grey, vintage wallpaper palette, on soft muted grey background, flat top-down view, minimalist airy composition, tileable, no text, no variation in motif placement. --ar 1:1 --s 180 --tile
+```
+
+---
+
+**예시 7 — ⚫ 원 × 플랫 블록 × 하프브릭**
+
+```
+Seamless repeating pattern of a single small filled circle, rendered as a solid flat color silhouette with crisp vector edges, no outline, no texture, arranged in a half-brick repeat with generous spacing, every other row shifted right by exactly half the motif width, small motif with generous uniform spacing and lots of negative space between motifs, every motif identical in size shape and orientation, mathematically precise repeat, sage green and soft cream, muted palette, on warm cream paper, flat top-down view, minimalist airy composition, tileable, no text, no variation in motif placement. --ar 1:1 --s 180 --tile
+```
+
+---
+
+**예시 8 — ➕ 십자 × 모노라인 × 정방형 그리드**
+
+```
+Seamless repeating pattern of a single small plus sign cross, rendered in ultra-thin crisp hairline strokes, single uniform line weight, no fill, arranged in a strict square grid with generous spacing, motifs in straight rows and columns with wide gaps, small motif with generous uniform spacing and lots of negative space between motifs, every motif identical in size shape and orientation, mathematically precise repeat, charcoal black on warm off-white, on off-white stationery paper, flat top-down view, minimalist airy composition, tileable, no text, no variation in motif placement. --ar 1:1 --s 120 --tile
 ```
 
 ---
@@ -269,12 +222,11 @@ Seamless repeating pattern of a single herringbone parallelogram tile, rendered 
 
 | **이걸 바꾸시면** | **효과** |
 | --- | --- |
-| `{motif}` 고정 + `{rendering}` 변경 | 같은 기하로 5가지 분위기 시리즈 (라인·블록·스티플·스트라이프·아웃라인) |
+| `{motif}` 고정 + `{rendering}` 변경 | 같은 기하로 4가지 분위기 (라인·블록·스티플·아웃라인) |
 | `{rendering}` 고정 + `{motif}` 변경 | 같은 질감의 기하 컬렉션 (예: 전부 스티플 그레인) |
-| `{layout}` 변경 | 그리드·다이아·벌집·물결 변주 |
-| `{color_palette}` 변경 | 동일 기하로 4계절·4분위기 버전 |
-| `--s` 낮춤 | 선·블록 더 깔끔 |
-| `--s` 높임 | 스티플·그레인 질감 풍부 |
+| `{layout}` 변경 | 그리드·다이아·하프드롭·삼각 변주 |
+| `{color_palette}` 변경 | 동일 기하로 4분위기 버전 |
+| `generous spacing` → `very wide spacing` | 더 듬성듬성, 미니멀 극대화 |
 | `--tile` 제거 | seamless 실패 (절대 금지) |
 | `--chaos` 상승 | 규칙성 붕괴 (절대 금지) |
 
@@ -282,24 +234,24 @@ Seamless repeating pattern of a single herringbone parallelogram tile, rendered 
 
 **⚠️ 핵심 팁 5가지**
 
-1. **"정형화된 기하" 가 테마예요.** 모티프는 수학적 기하 도형만, 레이아웃은 엄격한 격자만, 렌더링은 5종 중 선택. 회화적 매체(수채·과슈)는 이 가이드에 안 맞아요.
-2. **규칙성 키워드 필수.** `strict`, `mathematically precise`, `identical in size shape and orientation`, `no variation in motif placement` — 이거 빠지면 배치 흐트러짐.
-3. **모티프 1종 원칙.** 여러 종 섞으면 격자가 무너져요. 점·X 같은 초소형만 `ABAB` 교차 허용.
-4. **렌더링·모티프 매칭이 핵심.** 곡선/아치 → 모노라인, 대형 도형 → 스티플, 셀 있는 도형 → 스트라이프 필, 테셀레이션 → 아웃라인+필. 이 궁합을 맞추면 성공률이 확 올라요.
-5. **`--s` 는 렌더링에 맞춰.** 모노라인 `100~180`, 플랫블록 `150~220`, 스티플 `250~350`, 스트라이프 필 `180~250`. 스타일 벗어나면 질감이 엇나가요.
+1. **모티프는 무조건 단순하게.** 위 12개 목록 밖으로 나가지 마세요. 복잡해질수록 미드저니가 격자를 못 지켜요.
+2. **`small motif + generous uniform spacing + lots of negative space`** — 이 3종 키워드를 반드시 넣어야 빽빽함을 막을 수 있어요.
+3. **규칙성 키워드 필수.** `strict`, `mathematically precise repeat`, `identical in size shape and orientation`, `no variation in motif placement` — 빠지면 배치 흐트러짐.
+4. **테셀레이션·벌집·스캘럽은 금지.** edge-to-edge 밀집 배치는 미드저니가 실패해요. 반드시 "여백이 있는" 격자(square / diamond / half-drop / half-brick / triangular)만 쓰세요.
+5. **한 번에 성공 어려움.** 4~8회 재생성 각오. 마음에 드는 컷에서 `--seed` 를 고정해 시리즈화하세요.
 
 ---
 
 **✅ 시리즈 만드는 추천 흐름**
 
-1. **렌더링 하나** 를 정하세요 (예: 스티플 그레인).
-2. 같은 렌더링 × 같은 팔레트 × 같은 레이아웃 밑에 **모티프만 4~6종** 변주 (원·캡슐·다이아·오벌·반원·쿼트리폴).
+1. **렌더링 하나** 선택 (예: 스티플 그레인).
+2. 같은 렌더링 × 같은 팔레트 × 같은 레이아웃 밑에 **모티프만 4~6종** 변주 (원·반원·삼각·사각·다이아·캡슐).
 3. `--seed [번호]` 고정으로 선 두께·그레인 밀도 일관성 유지.
 4. 컬렉션 팔레트는 한 가지로 통일.
 
 > 💡 **상시판매형 추천 조합.**
-> ① 스티플 네이비·크림 6종 (원·캡슐·오벌·반원·다이아·쿼트리폴) — 럭셔리 박스·벽지.
-> ② 플랫블록 미드센추리 4종 (쿼터아크·반원·삼각·사각) — 벽지·쿠션.
-> ③ 모노라인 골드 아트데코 4종 (육각·아치·쿼트리폴·콤파스) — 호텔·청첩장.
-> ④ 스트라이프 필 모던 그래픽 4종 (스트라이프 육각·크로스해치 사각·중첩 원·헤링본) — 표지·패키지.
+> ① 스티플 네이비·크림 4종 (원·반원·캡슐·다이아) — 럭셔리 박스·벽지.
+> ② 플랫블록 미드센추리 4종 (삼각·사각·반원·원) — 벽지·쿠션.
+> ③ 모노라인 골드 아트데코 4종 (점X·육각·다이아·십자) — 청첩장·호텔 어메니티.
+> ④ 아웃라인+필 파스텔 4종 (쿼트리폴·원·반원·사각) — 빈티지 벽지·스테이셔너리.
 >
