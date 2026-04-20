@@ -1,6 +1,6 @@
 # 2-2) 입체감·고급 텍스처 패턴 — 촉감 있는 표면
 
-> **만져질 듯한 질감으로 규칙적으로 반복**되는 seamless 텍스처 패턴 프롬프트입니다. 톤온톤 엠보싱 다이아, 볼드 엠보싱 기하, 자수 크로스스티치, 세라믹 매트 릴리프 타일 — 4가지 검증된 스타일을 제공합니다. 럭셔리 박스·쇼핑백·쿠션·벽지·쥬얼리 파우치·청첩장에 바로 쓸 수 있어요.
+> **만져질 듯한 질감으로 규칙적으로 반복**되는 seamless 텍스처 패턴 프롬프트입니다. 톤온톤 엠보싱 다이아, 볼드 엠보싱 기하, 자수 크로스스티치, 노이즈 스티플 리소그래프 — 4가지 검증된 스타일을 제공합니다. 럭셔리 박스·쇼핑백·쿠션·벽지·쥬얼리 파우치·청첩장에 바로 쓸 수 있어요.
 
 ---
 
@@ -24,7 +24,7 @@
 
 ## 🚀 빠른 시작
 
-1. 아래 **스타일 A (톤온톤 엠보싱 다이아)** · **B (볼드 엠보싱 기하)** · **C (자수 크로스스티치)** · **D (세라믹 매트 릴리프)** 중 하나를 고르세요.
+1. 아래 **스타일 A (톤온톤 엠보싱 다이아)** · **B (볼드 엠보싱 기하)** · **C (자수 크로스스티치)** · **D (노이즈 스티플 리소그래프)** 중 하나를 고르세요.
 2. 원하는 예시를 고르세요. (스타일당 2개, 총 8개)
 3. **"완성 프롬프트"** 를 통째로 복사하세요.
 4. [alpha.midjourney.com](https://alpha.midjourney.com/) 에 붙여넣고 Enter.
@@ -76,12 +76,13 @@ Seamless repeating textured pattern of {motif}, {art_style}, arranged as a {grid
 - `a single large cross-stitch bold square motif with bordered center cross`
 - `a single large cross-stitch 4-point star medallion with diamond border`
 
-**스타일 D — 세라믹 매트 릴리프 타일 (순수 기하):**
+**스타일 D — 노이즈 스티플 기하 (단순 도형):**
 
-- `a single bold basketweave tile unit, two short horizontal bars interlocking with two short vertical bars forming a square`
-- `a single large concentric diamond tile with three nested diamond borders`
-- `a single bold square tile with a bold cross dividing it into four smaller quadrants`
-- `a single large checkerboard square tile divided into four equal quadrants`
+- `a single large solid circle`
+- `a single large solid diamond`
+- `a single large solid hexagon`
+- `a single large solid rounded square`
+- `a single large solid half-circle arch shape`
 
 > 💡 **모티프 1종 원칙.** 스타일 안에서 모티프 1개만 선택. 섞지 마세요.
 >
@@ -106,19 +107,19 @@ rendered as a high-contrast bold vector silhouette with subtle paper emboss shad
 rendered as a hand-embroidered cross-stitch texture with visible X-shaped thread stitches forming the motif, tactile needlepoint fabric surface, duotone thread on linen background, heritage sampler craft aesthetic
 ```
 
-**스타일 D — 🏺 세라믹 매트 릴리프 타일** (매트 세라믹·플랫 듀오톤 계열)
+**스타일 D — 🌾 노이즈 스티플 리소그래프** (리소그래프 스티플 그레인 계열)
 
 ```
-rendered as a flat matte ceramic tile surface with crisp vector edges and very subtle dimensional relief along motif borders, clean duotone flat color blocks, no fabric texture no weave material, modern luxury tile finish
+rendered with a soft risograph-style stippled grain fill inside each motif, fine speckled dots scattered evenly across the motif surface, subtle organic noise texture, duotone risograph print aesthetic, clean outer edges with grainy interior
 ```
 
 > 💡 **스타일 선택 기준**
 >
-> |  | **A 엠보싱 다이아** | **B 엠보싱 기하** | **C 크로스스티치** | **D 세라믹 릴리프** |
+> |  | **A 엠보싱 다이아** | **B 엠보싱 기하** | **C 크로스스티치** | **D 노이즈 스티플** |
 > | --- | --- | --- | --- | --- |
-> | 무드 | 고요 · 톤온톤 | 미니멀 · 절제 | 헤리티지 · 공예 | 모던 · 럭셔리 타일 |
-> | 어울리는 상품 | 가죽 파우치·청첩장 엠보싱 | 럭셔리 박스·레터프레스 | 쿠션·린넨 패브릭·자수 라벨 | 호텔 벽타일·바닥재·럭셔리 박스 |
-> | 모티프 크기 | 큼직 | 아주 큼직 | 큼직 | 중간·큼직 |
+> | 무드 | 고요 · 톤온톤 | 미니멀 · 절제 | 헤리티지 · 공예 | 빈티지 · 리소 프린트 |
+> | 어울리는 상품 | 가죽 파우치·청첩장 엠보싱 | 럭셔리 박스·레터프레스 | 쿠션·린넨 패브릭·자수 라벨 | 포스터·스티커·쇼핑백·티셔츠 |
+> | 모티프 크기 | 큼직 | 아주 큼직 | 큼직 | 큼직 |
 
 ### 3. `{color_palette}` — 색감은? (전부 밝은 톤만)
 
@@ -146,14 +147,14 @@ rendered as a flat matte ceramic tile surface with crisp vector edges and very s
 - `coral threads on bone white linen background`
 - `powder blue threads on ivory linen background`
 
-**스타일 D** — 플랫 듀오톤 (매트 세라믹용):
+**스타일 D** — 리소그래프 듀오톤 (스티플 색 on 크림 배경):
 
-- `powder blue tiles on warm cream background`
-- `dusty pink tiles on ivory background`
-- `soft sage tiles on warm cream background`
-- `butter yellow tiles on soft bone white background`
-- `coral tiles on warm cream background`
-- `warm mustard gold tiles on ivory background`
+- `warm mustard gold risograph stipple on warm cream background`
+- `dusty pink stipple on ivory background`
+- `soft sage stipple on warm cream background`
+- `coral stipple on soft bone white background`
+- `powder blue stipple on ivory background`
+- `butter yellow stipple on warm cream background`
 
 > 💡 **"pastel" 막연한 표현 피하세요.** `dusty pink`, `butter yellow`, `soft sage` 처럼 **구체적인 색 이름** 이 훨씬 또렷하게 나와요. 특히 스타일 A·D는 `tone-on-tone` 키워드가 필수.
 >
@@ -177,11 +178,11 @@ rendered as a flat matte ceramic tile surface with crisp vector edges and very s
 - `strict square grid where every motif's edges touch neighboring motifs creating a continuous tessellation` *(스타일 B 전용)*
 - `traditional embroidery sampler grid, motifs arranged in strict rows and columns with even generous spacing` *(스타일 C 기본)*
 - `half-drop repeat, every other column shifted down by exactly half the motif height, sampler spacing` *(스타일 C 변주)*
-- `basketweave tile layout, horizontal and vertical bar tile units alternating in perpendicular pairs with clean grout-like gaps` *(스타일 D — 배스킷)*
-- `concentric diamond tile tessellation, nested diamond tile units tiled edge-to-edge` *(스타일 D — 다이아)*
-- `strict square tile grid with motifs edge-to-edge like bathroom floor tiles` *(스타일 D — 정렬 타일)*
+- `strict square grid with uniform spacing between motifs` *(스타일 D 기본)*
+- `half-drop repeat, every other column shifted down by exactly half the motif height` *(스타일 D 변주)*
+- `diagonal diamond lattice, rows rotated 45 degrees with uniform spacing` *(스타일 D 응용)*
 
-> 💡 **스타일 × 레이아웃 궁합은 위 표기대로.** A엔 다이아 라티스, B엔 엣지 터치 그리드, C엔 하프드롭, D엔 배스킷/다이아 위브 — 벗어나면 해당 스타일의 느낌이 깨져요.
+> 💡 **스타일 × 레이아웃 궁합은 위 표기대로.** A엔 다이아 라티스, B엔 엣지 터치 그리드, C엔 샘플러 그리드, D엔 스퀘어 그리드/하프드롭 — 벗어나면 해당 스타일의 느낌이 깨져요.
 >
 
 ---
@@ -238,18 +239,18 @@ Seamless repeating textured pattern of a single large cross-stitch diamond medal
 
 ---
 
-### 예시 7 — 🏺 세라믹 배스킷 타일 (파우더 블루 on 크림) — 스타일 D
+### 예시 7 — 🌾 노이즈 스티플 서클 (머스터드 골드 on 크림) — 스타일 D
 
 ```
-Seamless repeating textured pattern of a single bold basketweave tile unit, two short horizontal bars interlocking with two short vertical bars forming a square, rendered as a flat matte ceramic tile surface with crisp vector edges and very subtle dimensional relief along motif borders, clean duotone flat color blocks, no fabric texture no weave material, modern luxury tile finish, arranged as a clear 4 by 4 grid basketweave tile layout, horizontal and vertical bar tile units alternating in perpendicular pairs with clean grout-like gaps, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, powder blue tiles on warm cream background, flat top-down view, tactile luxury surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 180 --tile
+Seamless repeating textured pattern of a single large solid circle, rendered with a soft risograph-style stippled grain fill inside each motif, fine speckled dots scattered evenly across the motif surface, subtle organic noise texture, duotone risograph print aesthetic, clean outer edges with grainy interior, arranged as a clear 4 by 4 grid strict square grid with uniform spacing between motifs, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, warm mustard gold risograph stipple on warm cream background, flat top-down view, tactile luxury surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 180 --tile
 ```
 
 ---
 
-### 예시 8 — 🏺 세라믹 컨센트릭 다이아 타일 (버터 옐로우 on 아이보리) — 스타일 D
+### 예시 8 — 🌾 노이즈 스티플 다이아몬드 (더스티 핑크 on 아이보리) — 스타일 D
 
 ```
-Seamless repeating textured pattern of a single large concentric diamond tile with three nested diamond borders, rendered as a flat matte ceramic tile surface with crisp vector edges and very subtle dimensional relief along motif borders, clean duotone flat color blocks, no fabric texture no weave material, modern luxury tile finish, arranged as a clear 4 by 4 grid concentric diamond tile tessellation, nested diamond tile units tiled edge-to-edge, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, butter yellow tiles on ivory background, flat top-down view, tactile luxury surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 180 --tile
+Seamless repeating textured pattern of a single large solid diamond, rendered with a soft risograph-style stippled grain fill inside each motif, fine speckled dots scattered evenly across the motif surface, subtle organic noise texture, duotone risograph print aesthetic, clean outer edges with grainy interior, arranged as a large 3 by 3 grid half-drop repeat, every other column shifted down by exactly half the motif height, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, dusty pink stipple on ivory background, flat top-down view, tactile luxury surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 180 --tile
 ```
 
 ---
@@ -259,10 +260,10 @@ Seamless repeating textured pattern of a single large concentric diamond tile wi
 | **이걸 바꾸시면** | **효과** |
 | --- | --- |
 | `{motif}` 고정 + `{color_palette}` 변경 | 같은 질감 4계절 컬러 시리즈 |
-| `{art_style}` A → D 전환 | 톤온톤 엠보싱 → 매트 세라믹 타일로 전환 |
+| `{art_style}` A → D 전환 | 톤온톤 엠보싱 → 리소그래프 스티플로 전환 |
 | `{art_style}` A → C 전환 | 엠보싱 → 수공예 자수 손맛 |
 | `{grid_count}` `3×3 → 4×4` | 아주 큼직 → 밸런스 |
-| `{layout}` 변경 (스타일 D 내) | 배스킷 ↔︎ 컨센트릭 다이아 변주 |
+| `{layout}` 변경 (스타일 D 내) | 스퀘어 그리드 ↔︎ 하프드롭 ↔︎ 다이아 라티스 변주 |
 | `tone-on-tone` 제거 (스타일 A) | 톤온톤 효과 붕괴 (A에서 절대 금지) |
 | `--s` 값 상승 | 텍스처·짜임 디테일 풍부 |
 | `--tile` 제거 | seamless 실패 (절대 금지) |
@@ -270,14 +271,15 @@ Seamless repeating textured pattern of a single large concentric diamond tile wi
 
 ---
 
-## ⚠️ 핵심 팁 6가지
+## ⚠️ 핵심 팁 7가지
 
-1. **스타일·모티프·레이아웃 궁합을 지키세요.** A→다이아 라티스·엠보싱 / B→엣지터치·컴파스 스타 / C→샘플러 그리드·크로스스티치 / D→배스킷·컨센트릭 세라믹 타일. 섞으면 스타일의 정체성이 깨져요.
-2. **재료 이름 금지.** 스타일 A에 `rattan`/`cane`/`knit`/`yarn`/`crochet`/`macrame`, 스타일 D에 `fabric`/`woven`/`weave`/`thread`/`textile` 같은 단어를 넣으면 MJ가 실제 재료 클로즈업을 그려버려요. 스타일 A·D는 순수 기하 + 표면 처리만.
-3. **크게크게 원칙.** 3×3 · 4×4 위주. 촘촘하면 텍스처 디테일이 뭉개져요.
-4. **색은 전부 밝은 톤.** 구체적인 색 이름으로 (`dusty pink`, `butter yellow`, `soft sage`, `warm mustard gold`). 스타일 A는 `tone-on-tone` 키워드 필수.
-5. **규칙성 키워드 필수.** `strict`, `mathematically precise repeat`, `identical in size shape and orientation`, `no variation in motif placement` — 하나라도 빠지면 흐트러져요.
-6. **질감 디테일은 스타일별 `--s` 값 맞추기.** A·C는 `200` 이상(엠보싱·자수 결), B·D는 `150~180`(플랫·세라믹). 과하면 재료감이 튀어나와요.
+1. **스타일·모티프·레이아웃 궁합을 지키세요.** A→다이아 라티스·엠보싱 / B→엣지터치·컴파스 스타 / C→샘플러 그리드·크로스스티치 / D→스퀘어 그리드/하프드롭·노이즈 스티플. 섞으면 스타일의 정체성이 깨져요.
+2. **재료 이름 금지 (스타일 A).** `rattan`/`cane`/`knit`/`yarn`/`crochet`/`macrame` 같은 단어를 넣으면 MJ가 실제 재료 클로즈업을 그려요. 스타일 A는 순수 기하 + 톤온톤 엠보싱만.
+3. **노이즈는 스티플·리소그래프로만 (스타일 D).** `film grain`, `digital noise`, `glitch`, `heavy paper grain` 같은 단어는 피하세요. MJ가 사진 노이즈·글리치·종이 클로즈업으로 가버려요. `risograph-style stippled grain`, `fine speckled dots` 가 정답.
+4. **크게크게 원칙.** 3×3 · 4×4 위주. 촘촘하면 텍스처 디테일이 뭉개져요.
+5. **색은 전부 밝은 톤.** 구체적인 색 이름으로 (`dusty pink`, `butter yellow`, `soft sage`, `warm mustard gold`). 스타일 A는 `tone-on-tone` 키워드 필수.
+6. **규칙성 키워드 필수.** `strict`, `mathematically precise repeat`, `identical in size shape and orientation`, `no variation in motif placement` — 하나라도 빠지면 흐트러져요.
+7. **질감 디테일은 스타일별 `--s` 값 맞추기.** A·C는 `200` 이상(엠보싱·자수 결), B·D는 `150~180`(플랫·스티플). 과하면 재료감이 튀어나와요.
 
 ---
 
@@ -288,5 +290,5 @@ Seamless repeating textured pattern of a single large concentric diamond tile wi
 3. 첫 결과의 `--seed` 를 다음에 붙여 비례·톤 일관성 유지.
 4. `--sref [첫 결과 URL]` 추가하면 완벽한 텍스처 컬렉션.
 
-> 💡 **상시판매형 추천 조합.** ① 스타일 A 엠보싱 다이아 5색 톤온톤 (핑크·세이지·블루·옐로우·크림) — 가죽 파우치·청첩장 엠보싱. ② 스타일 B 엠보싱 컴파스 스타 4색 (머스터드·세이지·핑크·코랄) — 청첩장·레터프레스 박스. ③ 스타일 C 크로스스티치 컴파스·다이아·하트 3메달리온 × 5실 컬러 — 쿠션·린넨 패브릭·자수 라벨. ④ 스타일 D 세라믹 배스킷·컨센트릭 다이아 2레이아웃 × 5색 — 호텔 벽타일·바닥재·럭셔리 박스.
+> 💡 **상시판매형 추천 조합.** ① 스타일 A 엠보싱 다이아 5색 톤온톤 (핑크·세이지·블루·옐로우·크림) — 가죽 파우치·청첩장 엠보싱. ② 스타일 B 엠보싱 컴파스 스타 4색 (머스터드·세이지·핑크·코랄) — 청첩장·레터프레스 박스. ③ 스타일 C 크로스스티치 컴파스·다이아·하트 3메달리온 × 5실 컬러 — 쿠션·린넨 패브릭·자수 라벨. ④ 스타일 D 노이즈 스티플 서클·다이아·헥사곤 3모티프 × 5색 리소그래프 — 포스터·스티커·쇼핑백·티셔츠.
 >
