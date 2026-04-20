@@ -1,6 +1,6 @@
 # 2-2) 입체감·고급 텍스처 패턴 — 촉감 있는 표면
 
-> **만져질 듯한 질감으로 규칙적으로 반복**되는 seamless 텍스처 패턴 프롬프트입니다. 톤온톤 엠보싱 다이아, 볼드 엠보싱 기하, 블록프린트 대형 보태니컬, 패브릭 위브 — 4가지 검증된 스타일을 제공합니다. 럭셔리 박스·쇼핑백·쿠션·벽지·쥬얼리 파우치·청첩장에 바로 쓸 수 있어요.
+> **만져질 듯한 질감으로 규칙적으로 반복**되는 seamless 텍스처 패턴 프롬프트입니다. 톤온톤 엠보싱 다이아, 볼드 엠보싱 기하, 자수 크로스스티치, 패브릭 위브 — 4가지 검증된 스타일을 제공합니다. 럭셔리 박스·쇼핑백·쿠션·벽지·쥬얼리 파우치·청첩장에 바로 쓸 수 있어요.
 
 ---
 
@@ -24,7 +24,7 @@
 
 ## 🚀 빠른 시작
 
-1. 아래 **스타일 A (톤온톤 엠보싱 다이아)** · **B (볼드 엠보싱 기하)** · **C (블록프린트 보태니컬)** · **D (패브릭 위브)** 중 하나를 고르세요.
+1. 아래 **스타일 A (톤온톤 엠보싱 다이아)** · **B (볼드 엠보싱 기하)** · **C (자수 크로스스티치)** · **D (패브릭 위브)** 중 하나를 고르세요.
 2. 원하는 예시를 고르세요. (스타일당 2개, 총 8개)
 3. **"완성 프롬프트"** 를 통째로 복사하세요.
 4. [alpha.midjourney.com](https://alpha.midjourney.com/) 에 붙여넣고 Enter.
@@ -68,13 +68,13 @@ Seamless repeating textured pattern of {motif}, {art_style}, arranged as a {grid
 - `a single large bold 8-point star with sharp pointed arms`
 - `a single large diamond with a bold dot in the center surrounded by short radiating rays`
 
-**스타일 C — 블록프린트 대형 보태니컬:**
+**스타일 C — 자수 크로스스티치 메달리온 (순수 기하):**
 
-- `a single large hand-carved palm frond leaf with long radiating blades`
-- `a single large hand-stamped fern leaf with rough textured edges`
-- `a single large bold tropical leaf silhouette with visible center vein`
-- `a single large simple oval leaf with hand-carved vein lines`
-- `a single large bold flower blossom with five rounded petals`
+- `a single large cross-stitch 8-point compass star medallion with square border`
+- `a single large cross-stitch diamond medallion with concentric diamond borders`
+- `a single large cross-stitch bordered heart medallion`
+- `a single large cross-stitch bold square motif with bordered center cross`
+- `a single large cross-stitch 4-point star medallion with diamond border`
 
 **스타일 D — 패브릭 위브 텍스처:**
 
@@ -100,10 +100,10 @@ rendered as a subtle tone-on-tone embossed relief with soft dimensional shadows 
 rendered as a high-contrast bold vector silhouette with subtle paper emboss shadow along motif edges, one accent color silhouette on off-white background, crisp clean edges, luxury letterpress stationery aesthetic
 ```
 
-**스타일 C — 🌿 블록프린트 대형 보태니컬** (리노컷·핸드스탬프 계열)
+**스타일 C — 🪡 자수 크로스스티치** (수공예 자수·샘플러 계열)
 
 ```
-rendered as a hand-carved linocut block-print stamp with rough uneven edges, visible ink bleed and organic imperfections, tone-on-tone duotone, artisan hand-printed feel
+rendered as a hand-embroidered cross-stitch texture with visible X-shaped thread stitches forming the motif, tactile needlepoint fabric surface, duotone thread on linen background, heritage sampler craft aesthetic
 ```
 
 **스타일 D — 🧵 패브릭 위브 텍스처** (배스킷·다이아 위브 계열)
@@ -114,10 +114,10 @@ rendered as a tight woven fabric texture with visible thread weave and subtle ov
 
 > 💡 **스타일 선택 기준**
 >
-> |  | **A 엠보싱 다이아** | **B 엠보싱 기하** | **C 블록프린트** | **D 패브릭 위브** |
+> |  | **A 엠보싱 다이아** | **B 엠보싱 기하** | **C 크로스스티치** | **D 패브릭 위브** |
 > | --- | --- | --- | --- | --- |
-> | 무드 | 고요 · 톤온톤 | 미니멀 · 절제 | 아티즌 · 손맛 | 클래식 · 텍스타일 |
-> | 어울리는 상품 | 가죽 파우치·청첩장 엠보싱 | 럭셔리 박스·레터프레스 | 쿠션·원단·쇼핑백 | 커튼·러그·벽지 |
+> | 무드 | 고요 · 톤온톤 | 미니멀 · 절제 | 헤리티지 · 공예 | 클래식 · 텍스타일 |
+> | 어울리는 상품 | 가죽 파우치·청첩장 엠보싱 | 럭셔리 박스·레터프레스 | 쿠션·린넨 패브릭·자수 라벨 | 커튼·러그·벽지 |
 > | 모티프 크기 | 큼직 | 아주 큼직 | 큼직 | 중간·큼직 |
 
 ### 3. `{color_palette}` — 색감은? (전부 밝은 톤만)
@@ -138,13 +138,13 @@ rendered as a tight woven fabric texture with visible thread weave and subtle ov
 - `coral silhouette on warm cream background`
 - `powder blue silhouette on soft bone white background`
 
-**스타일 C** — 손스탬프 듀오톤:
+**스타일 C** — 실 색 on 린넨 배경:
 
-- `soft sage green ink stamps on warm cream background`
-- `dusty pink stamps on ivory background`
-- `coral stamps on warm cream background`
-- `butter yellow stamps on soft bone white background`
-- `warm mustard stamps on ivory background`
+- `warm mustard gold cross-stitch threads on warm cream linen background`
+- `dusty pink threads on ivory linen background`
+- `soft sage threads on warm cream linen background`
+- `coral threads on bone white linen background`
+- `powder blue threads on ivory linen background`
 
 **스타일 D** — 위브 듀오톤:
 
@@ -174,8 +174,8 @@ rendered as a tight woven fabric texture with visible thread weave and subtle ov
 
 - `diagonal diamond lattice, rows rotated 45 degrees, with motifs sharing edges between cells forming a continuous embossed grid` *(스타일 A 전용)*
 - `strict square grid where every motif's edges touch neighboring motifs creating a continuous tessellation` *(스타일 B 전용)*
-- `half-drop repeat, every other column shifted down by exactly half the motif height, organic block-print spacing` *(스타일 C 기본)*
-- `offset diamond grid, motifs alternating in slightly rotated rows` *(스타일 C 변주)*
+- `traditional embroidery sampler grid, motifs arranged in strict rows and columns with even generous spacing` *(스타일 C 기본)*
+- `half-drop repeat, every other column shifted down by exactly half the motif height, sampler spacing` *(스타일 C 변주)*
 - `basketweave repeat, horizontal and vertical bar units alternating in perpendicular pairs` *(스타일 D — 배스킷)*
 - `concentric diamond tessellation, nested diamond units tiled edge-to-edge` *(스타일 D — 다이아)*
 
@@ -220,18 +220,18 @@ Seamless repeating textured pattern of a single large concave square with four i
 
 ---
 
-### 예시 5 — 🌿 블록프린트 팜 잎 (세이지 on 크림) — 스타일 C
+### 예시 5 — 🪡 크로스스티치 컴파스 스타 메달리온 (머스터드 골드 on 린넨 크림) — 스타일 C
 
 ```
-Seamless repeating textured pattern of a single large hand-carved palm frond leaf with long radiating blades, rendered as a hand-carved linocut block-print stamp with rough uneven edges, visible ink bleed and organic imperfections, tone-on-tone duotone, artisan hand-printed feel, arranged as a clear 4 by 4 grid half-drop repeat, every other column shifted down by exactly half the motif height, organic block-print spacing, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, soft sage green ink stamps on warm cream background, flat top-down view, tactile luxury surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 180 --tile
+Seamless repeating textured pattern of a single large cross-stitch 8-point compass star medallion with square border, rendered as a hand-embroidered cross-stitch texture with visible X-shaped thread stitches forming the motif, tactile needlepoint fabric surface, duotone thread on linen background, heritage sampler craft aesthetic, arranged as a clear 4 by 4 grid traditional embroidery sampler grid, motifs arranged in strict rows and columns with even generous spacing, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, warm mustard gold cross-stitch threads on warm cream linen background, flat top-down view, tactile luxury surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 200 --tile
 ```
 
 ---
 
-### 예시 6 — 🌿 블록프린트 플라워 블라썸 (더스티 핑크 on 아이보리) — 스타일 C
+### 예시 6 — 🪡 크로스스티치 다이아몬드 메달리온 (더스티 핑크 on 린넨 아이보리) — 스타일 C
 
 ```
-Seamless repeating textured pattern of a single large bold flower blossom with five rounded petals, rendered as a hand-carved linocut block-print stamp with rough uneven edges, visible ink bleed and organic imperfections, tone-on-tone duotone, artisan hand-printed feel, arranged as a large 3 by 3 grid half-drop repeat, every other column shifted down by exactly half the motif height, organic block-print spacing, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, dusty pink stamps on ivory background, flat top-down view, tactile luxury surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 180 --tile
+Seamless repeating textured pattern of a single large cross-stitch diamond medallion with concentric diamond borders, rendered as a hand-embroidered cross-stitch texture with visible X-shaped thread stitches forming the motif, tactile needlepoint fabric surface, duotone thread on linen background, heritage sampler craft aesthetic, arranged as a large 3 by 3 grid half-drop repeat, every other column shifted down by exactly half the motif height, sampler spacing, every motif identical in size shape and orientation, mathematically precise repeat with uniform spacing, dusty pink threads on ivory linen background, flat top-down view, tactile luxury surface design, tileable, no text, no variation in motif placement. --ar 1:1 --s 200 --tile
 ```
 
 ---
@@ -270,7 +270,7 @@ Seamless repeating textured pattern of a single large concentric diamond unit wi
 
 ## ⚠️ 핵심 팁 6가지
 
-1. **스타일·모티프·레이아웃 궁합을 지키세요.** A→다이아 라티스·엠보싱 / B→엣지터치·컴파스 스타 / C→하프드롭·블록프린트 / D→배스킷·컨센트릭 위브. 섞으면 스타일의 정체성이 깨져요.
+1. **스타일·모티프·레이아웃 궁합을 지키세요.** A→다이아 라티스·엠보싱 / B→엣지터치·컴파스 스타 / C→샘플러 그리드·크로스스티치 / D→배스킷·컨센트릭 위브. 섞으면 스타일의 정체성이 깨져요.
 2. **재료 이름 금지 (스타일 A).** `rattan`, `cane`, `knit`, `yarn`, `crochet`, `macrame` 같은 단어를 넣으면 MJ가 실제 재료 클로즈업을 그려버려요. 스타일 A는 순수 기하 + 톤온톤 엠보싱만.
 3. **크게크게 원칙.** 3×3 · 4×4 위주. 촘촘하면 텍스처 디테일이 뭉개져요.
 4. **색은 전부 밝은 톤.** 구체적인 색 이름으로 (`dusty pink`, `butter yellow`, `soft sage`, `warm mustard gold`). 스타일 A·D는 `tone-on-tone` 키워드 필수.
@@ -286,5 +286,5 @@ Seamless repeating textured pattern of a single large concentric diamond unit wi
 3. 첫 결과의 `--seed` 를 다음에 붙여 비례·톤 일관성 유지.
 4. `--sref [첫 결과 URL]` 추가하면 완벽한 텍스처 컬렉션.
 
-> 💡 **상시판매형 추천 조합.** ① 스타일 A 엠보싱 다이아 5색 톤온톤 (핑크·세이지·블루·옐로우·크림) — 가죽 파우치·청첩장 엠보싱. ② 스타일 B 엠보싱 컴파스 스타 4색 (머스터드·세이지·핑크·코랄) — 청첩장·레터프레스 박스. ③ 스타일 C 블록프린트 팜·펀·플라워 3모티프 듀오톤 — 쿠션·쇼핑백. ④ 스타일 D 배스킷·컨센트릭 다이아 2레이아웃 × 5색 — 커튼·러그·벽지 컬렉션.
+> 💡 **상시판매형 추천 조합.** ① 스타일 A 엠보싱 다이아 5색 톤온톤 (핑크·세이지·블루·옐로우·크림) — 가죽 파우치·청첩장 엠보싱. ② 스타일 B 엠보싱 컴파스 스타 4색 (머스터드·세이지·핑크·코랄) — 청첩장·레터프레스 박스. ③ 스타일 C 크로스스티치 컴파스·다이아·하트 3메달리온 × 5실 컬러 — 쿠션·린넨 패브릭·자수 라벨. ④ 스타일 D 배스킷·컨센트릭 다이아 2레이아웃 × 5색 — 커튼·러그·벽지 컬렉션.
 >
